@@ -1,0 +1,35 @@
+{
+    "name": "viml",
+    "displayName": "viml",
+    "description": "viml",
+    "version": "0.0.1",
+    "publisher": "dunstontc",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dunstontc/viml.git"
+    },
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "viml",
+            "aliases": ["VimL", "viml"],
+            "extensions": [".vim"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "viml",
+            "scopeName": "source.viml",
+            "path": "./syntaxes/viml.tmLanguage"
+        }]
+    },
+    "galleryBanner": {
+      "color": "#569cd6",
+      "theme": "dark"
+    },
+    "icon": "assets/128.png"
+}
