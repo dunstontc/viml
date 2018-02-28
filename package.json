@@ -24,7 +24,7 @@
         "grammars": [{
             "language": "viml",
             "scopeName": "source.viml",
-            "path": "./syntaxes/viml.tmLanguage"
+            "path": "./syntaxes/viml.tmLanguage.json"
         }]
     },
     "galleryBanner": {

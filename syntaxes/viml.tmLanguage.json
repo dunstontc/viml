@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "viml",
+	"patterns": [
+		{ "include": "#keyword" },
+		{ "include": "#constant" },
+		{ "include": "#strings" },
+		{ "include": "#storage" },
+		{ "include": "#comments" },
+		{ "include": "#entities" },
+		{ "include": "#variables" }
+	],
+	"repository": {
+    "storage": {
+      "patterns": [
+        {
+          "match": "\\b(let|set|command)\\b",
+          "name": "storage.viml"
+        }
+      ]
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "match": "\\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in| : )\\b",
+          "name": "keyword.control.viml"
+        },
+        {
+          "name": "keyword.function.viml",
+          "match": "\\b(fun|function|endfunction|endfunc)\\b"
+        },
+        {
+          "name": "keyword.operator.viml",
+          "match": "\\b([+-<>\\|=?!:])\\b"
+        }
+      ]
+		},
+		"entities": {
+			"patterns": [
+        {
+          "name": "entity.name.type.viml",
+          "match": ""
+        }
+      ]
+		},
+		"variables": {
+			"patterns": [
+        {
+          "name": "variable.parameter.viml",
+          "match": "(?<=\\()([a-zA-Z]+)(?=\\))"
+        }
+      ]
+		},
+		"constant": {
+			"patterns": [
+        {
+          "name": "constant.language.viml",
+          "match": "(true|false)"
+        },
+        {
+          "name": "constant.numeric.viml",
+          "match": " ([0-9]+)"
+        }
+      ]
+		},
+		"strings": {
+			"name": "string.quoted.single.viml",
+			"begin": "'",
+			"end": "'",
+			"patterns": []
+    },
+    "comments": {
+      "name": "comment.line.viml",
+      "begin": "(\"( |$))",
+      "end": "$",
+      "patterns": []
+    }
+	},
+	"scopeName": "source.viml"
+}
