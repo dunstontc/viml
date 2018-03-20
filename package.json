@@ -2,7 +2,7 @@
     "name": "viml",
     "displayName": "viml",
     "description": "viml",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "dunstontc",
     "repository": {
       "type": "git",
@@ -18,7 +18,7 @@
         "languages": [{
             "id": "viml",
             "aliases": ["VimL", "viml"],
-            "extensions": [".vim"],
+            "extensions": [".vim", ".vimrc", ".gvim", ".ideavim"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

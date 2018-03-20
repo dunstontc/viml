@@ -2,6 +2,15 @@
 [![GitHub issues](https://img.shields.io/github/issues/dunstontc/viml.svg)](https://github.com/dunstontc/viml/issues)
 [![License](https://img.shields.io/github/license/dunstontc/viml.svg)](https://github.com/dunstontc/viml/blob/master/LICENSE)
 
+## Features
+- Automatically sets filetype for:
+  - `*.vim`
+  - `*.vimrc`
+  - `*.gvim`
+  - `*.ideavim`
+  
+
+## Notes on Vim Script
 > There are several name spaces for variables.  
 > Which one is to be used is specified by what is prepended:
 <!-- (nothing) In a function: local to a function; otherwise: global -->
