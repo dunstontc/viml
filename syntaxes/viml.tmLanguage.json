@@ -5,41 +5,72 @@
 		{ "include": "#keywords" },
 		{ "include": "#constants" },
 		{ "include": "#strings" },
+		{ "include": "#punctuation" },
+		{ "include": "#support" },
 		{ "include": "#storage" },
-		{ "include": "#comments" },
 		{ "include": "#entities" },
-		{ "include": "#variables" }
+		{ "include": "#meta" },
+		{ "include": "#variables" },
+		{ "include": "#comments" }
 	],
 	"repository": {
     "storage": {
       "patterns": [
         {
-          "match": "\\b(let|set|command)\\b",
+          "match": "\\b(let|unlet|set|setlocal|command|abort)\\b",
           "name": "storage.viml"
+        },
+        {
+          "name": "storage.map.viml",
+          "match": "\\b([invtx]?(nore)?map)\\b"
+        },
+        {
+          "name": "storage.type.viml",
+          "match": "([<](buffer|BUFFER|silent|SILENT|sid|SID)[>])"
         }
       ]
     },
     "keywords": {
       "patterns": [
         {
-          "match": "\\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in| : )\\b",
-          "name": "keyword.control.viml"
+          "name": "keyword.control.viml",
+          "match": "\\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in| : )\\b"
+        },
+        {
+          "name": "keyword.control.viml",
+          "match": "\\b(break|continue|try|catch|endtry|finally|throw|range)\\b"
         },
         {
           "name": "keyword.function.viml",
           "match": "\\b(fun|function|endfunction|endfunc)\\b"
         },
         {
+          "name": "keyword.other.viml",
+          "match": "\\b(normal|silent)\\b"
+        },
+        {
           "name": "keyword.operator.viml",
-          "match": "\\b([+-<>\\|=?!:])\\b"
+          "match": "([#+?!=~\\\\])"
+        },
+        {
+          "name": "keyword.operator.viml",
+          "match": " ([:+-.]|[&|]{2})( |$)"
+        },
+        {
+          "name": "keyword.operator.viml",
+          "match": "([.]{3})"
+        },
+        {
+          "name": "keyword.operator.viml",
+          "match": "( [<>] )"
         }
       ]
 		},
 		"entities": {
 			"patterns": [
         {
-          "name": "entity.name.type.viml",
-          "match": ""
+          "name": "entity.name.function.viml",
+          "match": "(([absg]\\:)?[a-zA-Z0-9_#.]{2,})\\b(?=\\()"
         }
       ]
 		},
@@ -48,6 +79,10 @@
         {
           "name": "variable.parameter.viml",
           "match": "(?<=\\()([a-zA-Z]+)(?=\\))"
+        },
+        {
+          "name": "variable.other.viml",
+          "match": "\\b([absg]:[a-zA-Z0-9_.#]+)\\b(?!\\()"
         }
       ]
 		},
@@ -59,19 +94,79 @@
         },
         {
           "name": "constant.numeric.viml",
-          "match": " ([0-9]+)"
+          "match": "([0-9]+)"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<](bs|BS|bar|BAR|cr|CR|esc|ESC|space|SPACE|leader|LEADER|Plug|nop)[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<](([cCaAmMsS]\\-)?(Tab|up|UP|down|DOWN|left|LEFT|right|RIGHT))[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<]([cCaAmMsS]-[a-zA-Z0-9])[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<](F[0-9]+)[>])"
+        }
+      ]
+		},
+		"support": {
+			"patterns": [
+        {
+          "name": "support.function.viml",
+          "match": "(add|call|delete|empty|extend|get|has|isdirectory|join|printf)(?=\\()"
+        },
+        {
+          "name": "support.function.viml",
+          "match": " (call|echo|execute|redir|redraw|sleep|wincmd|setf)"
+        },
+        {
+          "name": "support.type.builtin.viml",
+          "match": "(v\\:(true|false|exception|shell_error|val))"
+        },
+        {
+          "name": "support.type.builtin.viml",
+          "match": "(&(cpo|previewwindow|rtp|shell(cmdflag|redir)?))"
+        },
+        {
+          "name": "support.type.option.viml",
+          "match": "\\b((no)?(hidden|list|modifiable|spell|wrap))"
+        }
+      ]
+    },
+		"punctuation": {
+			"patterns": [
+        {
+          "name": "punction.parens.viml",
+          "match": "([()])"
+        },
+        {
+          "name": "punction.comma.viml",
+          "match": "([,])"
+        }
+      ]
+		},
+		"meta": {
+			"patterns": [
+        {
+          "name": "meta.docstring.viml",
+          "match": "\"\"\""
         }
       ]
 		},
 		"strings": {
 			"name": "string.quoted.single.viml",
 			"begin": "'",
-			"end": "'",
+			"end": "('|$)",
 			"patterns": []
     },
     "comments": {
       "name": "comment.line.viml",
-      "begin": "(\"( |$))",
+      "begin": "(\")",
       "end": "$",
       "patterns": []
     }
