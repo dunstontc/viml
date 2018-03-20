@@ -2,8 +2,8 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "viml",
 	"patterns": [
-		{ "include": "#keyword" },
-		{ "include": "#constant" },
+		{ "include": "#keywords" },
+		{ "include": "#constants" },
 		{ "include": "#strings" },
 		{ "include": "#storage" },
 		{ "include": "#comments" },
@@ -19,7 +19,7 @@
         }
       ]
     },
-    "keyword": {
+    "keywords": {
       "patterns": [
         {
           "match": "\\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in| : )\\b",
@@ -51,7 +51,7 @@
         }
       ]
 		},
-		"constant": {
+		"constants": {
 			"patterns": [
         {
           "name": "constant.language.viml",

@@ -2,7 +2,7 @@
     "name": "viml",
     "displayName": "viml",
     "description": "viml",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "dunstontc",
     "repository": {
       "type": "git",
