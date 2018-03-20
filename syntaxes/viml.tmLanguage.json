@@ -17,16 +17,20 @@
     "storage": {
       "patterns": [
         {
-          "match": "\\b(let|unlet|set|setlocal|command|abort)\\b",
+          "match": "\\b(let|unlet|set|setlocal|command|abort|highlight|hi|autocmd|colorscheme)\\b",
           "name": "storage.viml"
         },
         {
           "name": "storage.map.viml",
-          "match": "\\b([invtx]?(nore)?map)\\b"
+          "match": "\\b([cinvtx]?(nore)?map)\\b"
         },
         {
           "name": "storage.type.viml",
           "match": "([<](buffer|BUFFER|silent|SILENT|sid|SID)[>])"
+        },
+        {
+          "name": "storage.plugin.viml",
+          "match": "(Plug|Plugin)"
         }
       ]
     },
@@ -98,7 +102,7 @@
         },
         {
           "name": "constant.language.map.viml",
-          "match": "([<](bs|BS|bar|BAR|cr|CR|esc|ESC|space|SPACE|leader|LEADER|Plug|nop)[>])"
+          "match": "([<](bs|BS|bar|BAR|cr|CR|del|DEL|esc|ESC|space|SPACE|leader|LEADER|Plug|nop)[>])"
         },
         {
           "name": "constant.language.map.viml",
@@ -122,7 +126,7 @@
         },
         {
           "name": "support.function.viml",
-          "match": " (call|echo|execute|redir|redraw|sleep|wincmd|setf)"
+          "match": "( |^)(call|echo|execute|redir|redraw|sleep|source|wincmd|setf)"
         },
         {
           "name": "support.type.builtin.viml",
@@ -130,7 +134,7 @@
         },
         {
           "name": "support.type.builtin.viml",
-          "match": "(&(cpo|previewwindow|rtp|shell(cmdflag|redir)?))"
+          "match": "(&(cpo|previewwindow|rtp|term|shell(cmdflag|redir)?))"
         },
         {
           "name": "support.type.option.viml",
