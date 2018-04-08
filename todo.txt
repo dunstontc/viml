@@ -1,0 +1,5 @@
+2018-04-07 "syntax enable"
+2018-04-07 "filetype plugin indent on"
+2018-04-07 "<q-args>"
+2018-04-07 augroups
+
