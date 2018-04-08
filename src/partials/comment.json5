@@ -1,0 +1,23 @@
+{
+  "repository": {
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.viml",
+          "begin": "^(\\s+)?\"",
+          "end": "$",
+          "patterns": [],
+        },
+        // {
+        //   "captures": {
+        //     "1": {
+        //       "name": "punctuation.definition.comment.vim"
+        //     }
+        //   },
+        //   "match": "(?!\\$)(\")(?!\\{).*$\\n?",
+        //   "name": "comment.line.quotes.viml"
+        // },
+      ]
+    }
+  }
+}

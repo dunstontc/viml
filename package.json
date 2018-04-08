@@ -46,7 +46,9 @@
     "icon": "assets/128.png",
     "devDependencies": {
         "gulp": "^3.9.1",
-        "gulp-strip-json-comments": "^3.0.0",
+        "gulp-json5-to-json": "^0.2.1",
+        "gulp-merge-json": "^1.3.0",
+        "gulp-rename": "^1.2.2",
         "gulp-watch": "^5.0.0"
     }
 }

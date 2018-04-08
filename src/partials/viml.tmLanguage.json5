@@ -1,138 +1,49 @@
 {
+    "$schema": "https://raw.githubusercontent.com/dunstontc/textmate/master/schema/tmLanguage.schema.json",
+    "name": "viml",
+    "scopeName": "source.viml",
+    "patterns": [
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#constant"
+        },
+        {
+            "include": "#entity"
+        },
+        {
+            "include": "#keyword"
+        },
+        {
+            "include": "#meta"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#storage"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#support"
+        },
+        {
+            "include": "#variable"
+        },
+        {
+            "include": "#syntax"
+        },
+        {
+            "include": "#commands"
+        },
+        {
+            "include": "#option"
+        }
+    ],
     "repository": {
-        "comment": {
-            "patterns": [
-                {
-                    "name": "comment.line.viml",
-                    "begin": "^(\\s+)?\"",
-                    "end": "$",
-                    "patterns": []
-                }
-            ]
-        },
-        "operators": {
-            "patterns": [
-                {
-                    "name": "keyword.operator.viml",
-                    "match": "([#+?!=~\\\\])"
-                },
-                {
-                    "name": "keyword.operator.viml",
-                    "match": " ([:+-.]|[&|]{2})( |$)"
-                },
-                {
-                    "name": "keyword.operator.viml",
-                    "match": "([.]{3})"
-                },
-                {
-                    "name": "keyword.operator.viml",
-                    "match": "( [<>] )"
-                },
-                {
-                    "name": "keyword.operator.viml",
-                    "match": "(>=)"
-                }
-            ]
-        },
-        "option": {
-            "patterns": [
-                {
-                    "name": "support.variable.option.viml",
-                    "match": "(?i:foldmethod)"
-                },
-                {
-                    "name": "support.type.setting.viml",
-                    "match": "(?i:\\b(no)?(cursorline|hidden|list|magic|modifiable|spell|swapfile|wrap))"
-                },
-                {
-                    "name": "support.type.option.viml",
-                    "match": "(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|syntax|tabpagemax|tabstop|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildmode|winminheight)(?==)"
-                }
-            ]
-        },
-        "strings": {
-            "patterns": [
-                {
-                    "name": "string.quoted.double.viml",
-                    "begin": "\"",
-                    "end": "(\"|$)",
-                    "patterns": []
-                },
-                {
-                    "name": "string.quoted.single.viml",
-                    "begin": "'",
-                    "end": "('|$)",
-                    "patterns": []
-                }
-            ]
-        },
-        "syntax": {
-            "patterns": [
-                {
-                    "name": "support.variable.syntax.option.viml",
-                    "match": "nohl"
-                },
-                {
-                    "name": "keyword.control.syntax.viml",
-                    "match": "syn case (ignore|match)"
-                },
-                {
-                    "name": "keyword.control.syntax.viml",
-                    "match": "syn(tax)? (clear|enable|off|on|manual|sync)"
-                },
-                {
-                    "name": "keyword.other.syntax.viml",
-                    "match": "\\b(contained|excludenl|keepend|oneline|skipwhite|transparent)\\b"
-                },
-                {
-                    "name": "keyword.other.syntax.viml",
-                    "match": "\\b(add|containedin|contains|matchgroup|nextgroup)"
-                },
-                {
-                    "name": "keyword.other.syntax.region.viml",
-                    "match": "\\b(start|skip|end)"
-                },
-                {
-                    "captures": {
-                        "0": {
-                            "name": "support.type.syntax.viml"
-                        },
-                        "1": {
-                            "name": "storage.syntax.viml"
-                        },
-                        "3": {
-                            "name": "variable.other.syntax-scope.viml"
-                        },
-                        "4": {
-                            "name": "storage.modifier.syntax.viml"
-                        }
-                    },
-                    "match": "(syn|syntax)\\s+(case|cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
-                    "patterns": []
-                },
-                {
-                    "captures": {
-                        "1": {
-                            "name": "storage.highlight.viml"
-                        },
-                        "2": {
-                            "name": "storage.modifier.syntax.viml"
-                        },
-                        "3": {
-                            "name": "support.function.highlight.viml"
-                        },
-                        "4": {
-                            "name": "variable.other.viml"
-                        },
-                        "5": {
-                            "name": "variable.other.viml"
-                        }
-                    },
-                    "match": "(hi|highlight)(?:\\s+)(def|default)(?:\\s+)(link)(?:\\s+)(\\w+)(?:\\s+)(\\w+)",
-                    "patterns": []
-                }
-            ]
-        },
         "storage": {
             "patterns": [
                 {
@@ -176,6 +87,7 @@
                 }
             ]
         },
+        "operators": {},
         "entity": {
             "patterns": [
                 {
@@ -272,6 +184,10 @@
                 }
             ]
         },
+        "strings": {},
+        "comment": {},
+        "syntax": {},
+        "option": {},
         "commands": {
             "patterns": [
                 {
@@ -293,49 +209,5 @@
                 }
             ]
         }
-    },
-    "$schema": "https://raw.githubusercontent.com/dunstontc/textmate/master/schema/tmLanguage.schema.json",
-    "name": "viml",
-    "scopeName": "source.viml",
-    "patterns": [
-        {
-            "include": "#comment"
-        },
-        {
-            "include": "#constant"
-        },
-        {
-            "include": "#entity"
-        },
-        {
-            "include": "#keyword"
-        },
-        {
-            "include": "#meta"
-        },
-        {
-            "include": "#punctuation"
-        },
-        {
-            "include": "#storage"
-        },
-        {
-            "include": "#strings"
-        },
-        {
-            "include": "#support"
-        },
-        {
-            "include": "#variable"
-        },
-        {
-            "include": "#syntax"
-        },
-        {
-            "include": "#commands"
-        },
-        {
-            "include": "#option"
-        }
-    ]
+    }
 }

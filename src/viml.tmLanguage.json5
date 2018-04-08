@@ -207,28 +207,8 @@
                 }
             ]
         },
-        "strings": {
-            "patterns": [
-                {
-                    "name": "string.quoted.double.viml",
-                    "begin": "\"",
-                    "end": "(\"|$)",
-                    "patterns": []
-                },
-                {
-                    "name": "string.quoted.single.viml",
-                    "begin": "'",
-                    "end": "('|$)",
-                    "patterns": []
-                }
-            ]
-        },
-        "comment": {
-            "name": "comment.line.viml",
-            "begin": "^(\\s+)?\"",
-            "end": "$",
-            "patterns": []
-        },
+        "strings": {},
+        "comment": {},
         "syntax": {
             "patterns": [
                 {
