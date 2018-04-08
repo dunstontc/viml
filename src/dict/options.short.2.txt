@@ -1,0 +1,355 @@
+{ "name": "aleph"           , "alias": "al   ",   }
+{ "name": "allowrevins"     , "alias": "ari  ",   }
+{ "name": "altkeymap"       , "alias": "akm  ",   }
+{ "name": "ambiwidth"       , "alias": "ambw ",   }
+{ "name": "antialias"       , "alias": "anti ",   }
+{ "name": "autochdir"       , "alias": "acd  ",   }
+{ "name": "arabic"          , "alias": "arab ",   }
+{ "name": "arabicshape"     , "alias": "arshape", }
+{ "name": "autoindent"      , "alias": "ai   ",   }
+{ "name": "autoread"        , "alias": "ar   ",   }
+{ "name": "autowrite"       , "alias": "aw   ",   }
+{ "name": "autowriteall"    , "alias": "awa  ",   }
+{ "name": "background"      , "alias": "bg   ",   }
+{ "name": "backspace"       , "alias": "bs   ",   }
+{ "name": "backup"          , "alias": "bk   ",   }
+{ "name": "backupcopy"      , "alias": "bkc  ",   }
+{ "name": "backupdir"       , "alias": "bdir ",   }
+{ "name": "backupext"       , "alias": "bex  ",   }
+{ "name": "backupskip"      , "alias": "bsk  ",   }
+{ "name": "balloondelay"    , "alias": "bdlay",   }
+{ "name": "ballooneval"     , "alias": "beval",   }
+{ "name": "balloonexpr"     , "alias": "bexpr",   }
+{ "name": "binary"          , "alias": "bin  ",   }
+{ "name": "bioskey"         , "alias": "biosk",   }
+{ "name": "bomb"                               ",   }
+{ "name": "breakat"         , "alias": "brk  ",   }
+{ "name": "browsedir"       , "alias": "bsdir",   }
+{ "name": "bufhidden"       , "alias": "bh   ",   }
+{ "name": "buflisted"       , "alias": "bl   ",   }
+{ "name": "buftype"         , "alias": "bt   ",   }
+{ "name": "casemap"         , "alias": "cmp  ",   }
+{ "name": "cdpath"          , "alias": "cd   ",   }
+{ "name": "cedit"                              ",   }
+{ "name": "charconvert"     , "alias": "ccv  ",   }
+{ "name": "cindent"         , "alias": "cin  ",   }
+{ "name": "cinkeys"         , "alias": "cink ",   }
+{ "name": "cinoptions"      , "alias": "cino ",   }
+{ "name": "cinwords"        , "alias": "cinw ",   }
+{ "name": "clipboard"       , "alias": "cb   ",   }
+{ "name": "cmdheight"       , "alias": "ch   ",   }
+{ "name": "cmdwinheight"    , "alias": "cwh  ",   }
+{ "name": "colorcolumn"     , "alias": "cc   ",   }
+{ "name": "columns"         , "alias": "co   ",   }
+{ "name": "comments"        , "alias": "com  ",   }
+{ "name": "commentstring"   , "alias": "cms  ",   }
+{ "name": "compatible"      , "alias": "cp   ",   }
+{ "name": "complete"        , "alias": "cpt  ",   }
+{ "name": "completefunc"    , "alias": "cfu  ",   }
+{ "name": "completeopt"     , "alias": "cot  ",   }
+{ "name": "concealcursor"   , "alias": "cocu ",   }
+{ "name": "conceallevel"    , "alias": "cole ",   }
+{ "name": "confirm"         , "alias": "cf   ",   }
+{ "name": "conskey"         , "alias": "consk",   }
+{ "name": "copyindent"      , "alias": "ci   ",   }
+{ "name": "cpoptions"       , "alias": "cpo  ",   }
+{ "name": "cryptmethod"     , "alias": "cm   ",   }
+{ "name": "cscopepathcomp"  , "alias": "cspc ",   }
+{ "name": "cscopeprg"       , "alias": "csprg",   }
+{ "name": "cscopequickfix"  , "alias": "csqf ",   }
+{ "name": "cscopetag"       , "alias": "cst  ",   }
+{ "name": "cscopetagorder"  , "alias": "csto ",   }
+{ "name": "cscopeverbose"   , "alias": "csverb",  }
+{ "name": "cursorbind"      , "alias": "crb  ",   }
+{ "name": "cursorcolumn"    , "alias": "cuc  ",   }
+{ "name": "cursorline"      , "alias": "cul  ",   }
+{ "name": "debug"                              ",   }
+{ "name": "define"          , "alias": "def  ",   }
+{ "name": "delcombine"      , "alias": "deco ",   }
+{ "name": "dictionary"      , "alias": "dict ",   }
+{ "name": "diff"                               ",   }
+{ "name": "diffexpr"        , "alias": "dex  ",   }
+{ "name": "diffopt"         , "alias": "dip  ",   }
+{ "name": "digraph"         , "alias": "dg   ",   }
+{ "name": "directory"       , "alias": "dir  ",   }
+{ "name": "display"         , "alias": "dy   ",   }
+{ "name": "eadirection"     , "alias": "ead  ",   }
+{ "name": "edcompatible"    , "alias": "ed   ",   }
+{ "name": "encoding"        , "alias": "enc  ",   }
+{ "name": "endofline"       , "alias": "eol  ",   }
+{ "name": "equalalways"     , "alias": "ea   ",   }
+{ "name": "equalprg"        , "alias": "ep   ",   }
+{ "name": "errorbells"      , "alias": "eb   ",   }
+{ "name": "errorfile"       , "alias": "ef   ",   }
+{ "name": "errorformat"     , "alias": "efm  ",   }
+{ "name": "esckeys"         , "alias": "ek   ",   }
+{ "name": "eventignore"     , "alias": "ei   ",   }
+{ "name": "expandtab"       , "alias": "et   ",   }
+{ "name": "exrc"            , "alias": "ex   ",   }
+{ "name": "fileencoding"    , "alias": "fenc ",   }
+{ "name": "fileencodings"   , "alias": "fencs",   }
+{ "name": "fileformat"      , "alias": "ff   ",   }
+{ "name": "fileformats"     , "alias": "ffs  ",   }
+{ "name": "filetype"        , "alias": "ft   ",   }
+{ "name": "fillchars"       , "alias": "fcs  ",   }
+{ "name": "fkmap"           , "alias": "fk   ",   }
+{ "name": "foldclose"       , "alias": "fcl  ",   }
+{ "name": "foldcolumn"      , "alias": "fdc  ",   }
+{ "name": "foldenable"      , "alias": "fen  ",   }
+{ "name": "foldexpr"        , "alias": "fde  ",   }
+{ "name": "foldignore"      , "alias": "fdi  ",   }
+{ "name": "foldlevel"       , "alias": "fdl  ",   }
+{ "name": "foldlevelstart"  , "alias": "fdls ",   }
+{ "name": "foldmarker"      , "alias": "fmr  ",   }
+{ "name": "foldmethod"      , "alias": "fdm  ",   }
+{ "name": "foldminlines"    , "alias": "fml  ",   }
+{ "name": "foldnestmax"     , "alias": "fdn  ",   }
+{ "name": "foldopen"        , "alias": "fdo  ",   }
+{ "name": "foldtext"        , "alias": "fdt  ",   }
+{ "name": "formatlistpat"   , "alias": "flp  ",   }
+{ "name": "formatoptions"   , "alias": "fo   ",   }
+{ "name": "formatprg"       , "alias": "fp   ",   }
+{ "name": "formatexpr"      , "alias": "fex  ",   }
+{ "name": "fsync"           , "alias": "fs   ",   }
+{ "name": "gdefault"        , "alias": "gd   ",   }
+{ "name": "grepformat"      , "alias": "gfm  ",   }
+{ "name": "grepprg"         , "alias": "gp   ",   }
+{ "name": "guicursor"       , "alias": "gcr  ",   }
+{ "name": "guifont"         , "alias": "gfn  ",   }
+{ "name": "guifontset"      , "alias": "gfs  ",   }
+{ "name": "guifontwide"     , "alias": "gfw  ",   }
+{ "name": "guiheadroom"     , "alias": "ghr  ",   }
+{ "name": "guioptions"      , "alias": "go   ",   }
+{ "name": "guipty"                             ",   }
+{ "name": "guitablabel"     , "alias": "gtl  ",   }
+{ "name": "guitabtooltip"   , "alias": "gtt  ",   }
+{ "name": "helpfile"        , "alias": "hf   ",   }
+{ "name": "helpheight"      , "alias": "hh   ",   }
+{ "name": "helplang"        , "alias": "hlg  ",   }
+{ "name": "hidden"          , "alias": "hid  ",   }
+{ "name": "highlight"       , "alias": "hl   ",   }
+{ "name": "hlsearch"        , "alias": "hls  ",   }
+{ "name": "history"         , "alias": "hi   ",   }
+{ "name": "hkmap"           , "alias": "hk   ",   }
+{ "name": "hkmapp"          , "alias": "hkp  ",   }
+{ "name": "icon"                               ",   }
+{ "name": "iconstring"                         ",   }
+{ "name": "ignorecase"      , "alias": "ic   ",   }
+{ "name": "imactivatekey"   , "alias": "imak ",   }
+{ "name": "imcmdline"       , "alias": "imc  ",   }
+{ "name": "imdisable"       , "alias": "imd  ",   }
+{ "name": "iminsert"        , "alias": "imi  ",   }
+{ "name": "imsearch"        , "alias": "ims  ",   }
+{ "name": "include"         , "alias": "inc  ",   }
+{ "name": "includeexpr"     , "alias": "inex ",   }
+{ "name": "incsearch"       , "alias": "is   ",   }
+{ "name": "indentexpr"      , "alias": "inde ",   }
+{ "name": "indentkeys"      , "alias": "indk ",   }
+{ "name": "infercase"       , "alias": "inf  ",   }
+{ "name": "insertmode"      , "alias": "im   ",   }
+{ "name": "isfname"         , "alias": "isf  ",   }
+{ "name": "isident"         , "alias": "isi  ",   }
+{ "name": "iskeyword"       , "alias": "isk  ",   }
+{ "name": "isprint"         , "alias": "isp  ",   }
+{ "name": "joinspaces"      , "alias": "js   ",   }
+{ "name": "key"                                ",   }
+{ "name": "keymap"          , "alias": "kmp  ",   }
+{ "name": "keymodel"        , "alias": "km   ",   }
+{ "name": "keywordprg"      , "alias": "kp   ",   }
+{ "name": "langmap"         , "alias": "lmap ",   }
+{ "name": "langmenu"        , "alias": "lm   ",   }
+{ "name": "laststatus"      , "alias": "ls   ",   }
+{ "name": "lazyredraw"      , "alias": "lz   ",   }
+{ "name": "linebreak"       , "alias": "lbr  ",   }
+{ "name": "lines"                                 }
+{ "name": "linespace"       , "alias": "lsp  ",   }
+{ "name": "lisp"                                  }
+{ "name": "lispwords"       , "alias": "lw   ",   }
+{ "name": "list"                                  }
+{ "name": "listchars"       , "alias": "lcs  ",   }
+{ "name": "loadplugins"     , "alias": "lpl  ",   }
+{ "name": "macatsui"                              }
+{ "name": "magic"                                 }
+{ "name": "makeef"          , "alias": "mef  ",   }
+{ "name": "makeprg"         , "alias": "mp   ",   }
+{ "name": "matchpairs"      , "alias": "mps  ",   }
+{ "name": "matchtime"       , "alias": "mat  ",   }
+{ "name": "maxcombine"      , "alias": "mco  ",   }
+{ "name": "maxfuncdepth"    , "alias": "mfd  ",   }
+{ "name": "maxmapdepth"     , "alias": "mmd  ",   }
+{ "name": "maxmem"          , "alias": "mm   ",   }
+{ "name": "maxmempattern"   , "alias": "mmp  ",   }
+{ "name": "maxmemtot"       , "alias": "mmt  ",   }
+{ "name": "menuitems"       , "alias": "mis  ",   }
+{ "name": "mkspellmem"      , "alias": "msm  ",   }
+{ "name": "modeline"        , "alias": "ml   ",   }
+{ "name": "modelines"       , "alias": "mls  ",   }
+{ "name": "modifiable"      , "alias": "ma   ",   }
+{ "name": "modified"        , "alias": "mod  ",   }
+{ "name": "more"                                  }
+{ "name": "mouse"                                 }
+{ "name": "mousefocus"      , "alias": "mousef",  }
+{ "name": "mousehide"       , "alias": "mh   ",   }
+{ "name": "mousemodel"      , "alias": "mousem",  }
+{ "name": "mouseshape"      , "alias": "mouses",  }
+{ "name": "mousetime"       , "alias": "mouset",  }
+{ "name": "mzquantum"       , "alias": "mzq  ",   }
+{ "name": "nrformats"       , "alias": "nf   ",   }
+{ "name": "number"          , "alias": "nu   ",   }
+{ "name": "numberwidth"     , "alias": "nuw  ",   }
+{ "name": "omnifunc"        , "alias": "ofu  ",   }
+{ "name": "opendevice"      , "alias": "odev ",   }
+{ "name": "operatorfunc"    , "alias": "opfunc",  }
+{ "name": "osfiletype"      , "alias": "oft  ",   }
+{ "name": "paragraphs"      , "alias": "para ",   }
+{ "name": "paste"                                 }
+{ "name": "pastetoggle"     , "alias": "pt   ",   }
+{ "name": "patchexpr"       , "alias": "pex  ",   }
+{ "name": "patchmode"       , "alias": "pm   ",   }
+{ "name": "path"            , "alias": "pa   ",   }
+{ "name": "preserveindent"  , "alias": "pi   ",   }
+{ "name": "previewheight"   , "alias": "pvh  ",   }
+{ "name": "previewwindow"   , "alias": "pvw  ",   }
+{ "name": "printdevice"     , "alias": "pdev ",   }
+{ "name": "printencoding"   , "alias": "penc ",   }
+{ "name": "printexpr"       , "alias": "pexpr",   }
+{ "name": "printfont"       , "alias": "pfn  ",   }
+{ "name": "printheader"     , "alias": "pheader", }
+{ "name": "printmbcharset"  , "alias": "pmbcs",   }
+{ "name": "printmbfont"     , "alias": "pmbfn",   }
+{ "name": "printoptions"    , "alias": "popt ",   }
+{ "name": "pumheight"       , "alias": "ph   ",   }
+{ "name": "quoteescape"     , "alias": "qe   ",   }
+{ "name": "readonly"        , "alias": "ro   ",   }
+{ "name": "redrawtime"      , "alias": "rdt  ",   }
+{ "name": "relativenumber"  , "alias": "rnu  ",   }
+{ "name": "remap"                                 }
+{ "name": "report"                                }
+{ "name": "restorescreen"   , "alias": "rs   ",   }
+{ "name": "revins"          , "alias": "ri   ",   }
+{ "name": "rightleft"       , "alias": "rl   ",   }
+{ "name": "rightleftcmd"    , "alias": "rlc  ",   }
+{ "name": "ruler"           , "alias": "ru   ",   }
+{ "name": "rulerformat"     , "alias": "ruf  ",   }
+{ "name": "runtimepath"     , "alias": "rtp  ",   }
+{ "name": "scroll"          , "alias": "scr  ",   }
+{ "name": "scrollbind"      , "alias": "scb  ",   }
+{ "name": "scrolljump"      , "alias": "sj   ",   }
+{ "name": "scrolloff"       , "alias": "so   ",   }
+{ "name": "scrollopt"       , "alias": "sbo  ",   }
+{ "name": "sections"        , "alias": "sect ",   }
+{ "name": "secure"                                }
+{ "name": "selection"       , "alias": "sel  ",   }
+{ "name": "selectmode"      , "alias": "slm  ",   }
+{ "name": "sessionoptions"  , "alias": "ssop ",   }
+{ "name": "shell"           , "alias": "sh   ",   }
+{ "name": "shellcmdflag"    , "alias": "shcf ",   }
+{ "name": "shellpipe"       , "alias": "sp   ",   }
+{ "name": "shellquote"      , "alias": "shq  ",   }
+{ "name": "shellredir"      , "alias": "srr  ",   }
+{ "name": "shellslash"      , "alias": "ssl  ",   }
+{ "name": "shelltemp"       , "alias": "stmp ",   }
+{ "name": "shelltype"       , "alias": "st   ",   }
+{ "name": "shellxquote"     , "alias": "sxq  ",   }
+{ "name": "shiftround"      , "alias": "sr   ",   }
+{ "name": "shiftwidth"      , "alias": "sw   ",   }
+{ "name": "shortmess"       , "alias": "shm  ",   }
+{ "name": "shortname"       , "alias": "sn   ",   }
+{ "name": "showbreak"       , "alias": "sbr  ",   }
+{ "name": "showcmd"         , "alias": "sc   ",   }
+{ "name": "showfulltag"     , "alias": "sft  ",   }
+{ "name": "showmatch"       , "alias": "sm   ",   }
+{ "name": "showmode"        , "alias": "smd  ",   }
+{ "name": "showtabline"     , "alias": "stal ",   }
+{ "name": "sidescroll"      , "alias": "ss   ",   }
+{ "name": "sidescrolloff"   , "alias": "siso ",   }
+{ "name": "smartcase"       , "alias": "scs  ",   }
+{ "name": "smartindent"     , "alias": "si   ",   }
+{ "name": "smarttab"        , "alias": "sta  ",   }
+{ "name": "softtabstop"     , "alias": "sts  ",   }
+{ "name": "spell"                               }
+{ "name": "spellcapcheck"   , "alias": "spc  ",   }
+{ "name": "spellfile"       , "alias": "spf  ",   }
+{ "name": "spelllang"       , "alias": "spl  ",   }
+{ "name": "spellsuggest"    , "alias": "sps  ",   }
+{ "name": "splitbelow"      , "alias": "sb   ",   }
+{ "name": "splitright"      , "alias": "spr  ",   }
+{ "name": "startofline"     , "alias": "sol  ",   }
+{ "name": "statusline"      , "alias": "stl  ",   }
+{ "name": "suffixes"        , "alias": "su   ",   }
+{ "name": "suffixesadd"     , "alias": "sua  ",   }
+{ "name": "swapfile"        , "alias": "swf  ",   }
+{ "name": "swapsync"        , "alias": "sws  ",   }
+{ "name": "switchbuf"       , "alias": "swb  ",   }
+{ "name": "synmaxcol"       , "alias": "smc  ",   }
+{ "name": "syntax"          , "alias": "syn  ",   }
+{ "name": "tabstop"         , "alias": "ts   ",   }
+{ "name": "tabline"         , "alias": "tal  ",   }
+{ "name": "tabpagemax"      , "alias": "tpm  ",   }
+{ "name": "tagbsearch"      , "alias": "tbs  ",   }
+{ "name": "taglength"       , "alias": "tl   ",   }
+{ "name": "tagrelative"     , "alias": "tr   ",   }
+{ "name": "tags"            , "alias": "tag  ",   }
+{ "name": "tagstack"        , "alias": "tgst ",   }
+{ "name": "term"                                  }
+{ "name": "termbidi"        , "alias": "tbidi",   }
+{ "name": "termencoding"    , "alias": "tenc ",   }
+{ "name": "terse"                              ",   }
+{ "name": "textauto"        , "alias": "ta   ",   }
+{ "name": "textmode"        , "alias": "tx   ",   }
+{ "name": "textwidth"       , "alias": "tw   ",   }
+{ "name": "thesaurus"       , "alias": "tsr  ",   }
+{ "name": "tildeop"         , "alias": "top  ",   }
+{ "name": "timeout"         , "alias": "to   ",   }
+{ "name": "timeoutlen"      , "alias": "tm   ",   }
+{ "name": "title"                                 }
+{ "name": "titlelen"                              }
+{ "name": "titleold"                              }
+{ "name": "titlestring"                           }
+{ "name": "toolbar"         , "alias": "tb   ",   }
+{ "name": "toolbariconsize" , "alias": "tbis ",   }
+{ "name": "ttimeout"                              }
+{ "name": "ttimeoutlen"     , "alias": "ttm  ",   }
+{ "name": "ttybuiltin"      , "alias": "tbi  ",   }
+{ "name": "ttyfast"         , "alias": "tf   ",   }
+{ "name": "ttymouse"        , "alias": "ttym ",   }
+{ "name": "ttyscroll"       , "alias": "tsl  ",   }
+{ "name": "ttytype"         , "alias": "tty  ",   }
+{ "name": "undodir"         , "alias": "udir ",   }
+{ "name": "undofile"        , "alias": "udf  ",   }
+{ "name": "undolevels"      , "alias": "ul   ",   }
+{ "name": "undoreload"      , "alias": "ur   ",   }
+{ "name": "updatecount"     , "alias": "uc   ",   }
+{ "name": "updatetime"      , "alias": "ut   ",   }
+{ "name": "verbose"         , "alias": "vbs  ",   }
+{ "name": "verbosefile"     , "alias": "vfile",   }
+{ "name": "viewdir"         , "alias": "vdir ",   }
+{ "name": "viewoptions"     , "alias": "vop  ",   }
+{ "name": "viminfo"         , "alias": "vi   ",   }
+{ "name": "virtualedit"     , "alias": "ve   ",   }
+{ "name": "visualbell"      , "alias": "vb   ",   }
+{ "name": "warn"                                  }
+{ "name": "weirdinvert"     , "alias": "wiv  ",   }
+{ "name": "whichwrap"       , "alias": "ww   ",   }
+{ "name": "wildchar"        , "alias": "wc   ",   }
+{ "name": "wildcharm"       , "alias": "wcm  ",   }
+{ "name": "wildignore"      , "alias": "wig  ",   }
+{ "name": "wildignorecase"  , "alias": "wic  ",   }
+{ "name": "wildmenu"        , "alias": "wmnu ",   }
+{ "name": "wildmode"        , "alias": "wim  ",   }
+{ "name": "wildoptions"     , "alias": "wop  ",   }
+{ "name": "winaltkeys"      , "alias": "wak  ",   }
+{ "name": "window"          , "alias": "wi   ",   }
+{ "name": "winheight"       , "alias": "wh   ",   }
+{ "name": "winfixheight"    , "alias": "wfh  ",   }
+{ "name": "winfixwidth"     , "alias": "wfw  ",   }
+{ "name": "winminheight"    , "alias": "wmh  ",   }
+{ "name": "winminwidth"     , "alias": "wmw  ",   }
+{ "name": "winwidth"        , "alias": "wiw  ",   }
+{ "name": "wrap"                                  }
+{ "name": "wrapmargin"      , "alias": "wm   ",   }
+{ "name": "wrapscan"        , "alias": "ws   ",   }
+{ "name": "write"                                 }
+{ "name": "writeany"        , "alias": "wa   ",   }
+{ "name": "writebackup"     , "alias": "wb   ",   }
+{ "name": "writedelay"      , "alias": "wd   ",   }
