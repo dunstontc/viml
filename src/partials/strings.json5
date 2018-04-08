@@ -18,10 +18,10 @@
           "match": "/(\\\\\\\\|\\\\/|[^\\n/])*/",
           "name": "string.regexp.viml",
         },
-        {
-          "match": "\\+(\\\\\\\\|\\\\/|[^\\n/])*\\+",
-          "name": "string.regexp.viml",
-        },
+        // {
+        //   "match": "\\+(\\\\\\\\|\\\\/|[^\\n/])*\\+",
+        //   "name": "string.regexp.viml",
+        // },
       ]
     }
   }

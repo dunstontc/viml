@@ -17,7 +17,7 @@
           "end": "$",
           "patterns": [
             {
-              "match": "\\{\\{\\{\\d$",
+              "match": "\\{\\{\\{\\d?$",
               "name": "comment.line.foldmarker.viml",
             },
           ],
@@ -28,7 +28,7 @@
           "end": "$",
           "patterns": [
             {
-              "match": "\\{\\{\\{\\d$",
+              "match": "\\{\\{\\{\\d?$",
               "name": "comment.line.foldmarker.viml",
             },
           ],

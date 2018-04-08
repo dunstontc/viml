@@ -16,15 +16,26 @@
         },
         {
           "name": "keyword.other.syntax.viml",
-          "match": "\\b(contained|excludenl|keepend|oneline|skipwhite|transparent)\\b",
+          "match": "\\b(contained|display|excludenl|keepend|oneline|skipnl|skipwhite|transparent)\\b",
         },
         {
           "name": "keyword.other.syntax.viml",
-          "match": "\\b(add|containedin|contains|matchgroup|nextgroup)",
+          "match": "\\b(add|containedin|contains|matchgroup|nextgroup)\\=",  // TODO: ALLBUT
         },
+        // {
+        //   "name": "keyword.other.syntax.viml",
+        //   "match": "(\\b(start|skip|end)\\=)",
+        // },
         {
-          "name": "keyword.other.syntax.region.viml",
-          "match": "\\b(start|skip|end)",
+          "captures": {
+            "1": {
+              "name": "keyword.other.syntax-range.viml"
+            },
+            "3": {
+              "name": "string.regexp.viml"
+            },
+          },
+          "match": "((start|skip|end)\\=)(\\+\\S+\\+\\s)?",
         },
         {
           "captures": {
@@ -39,7 +50,7 @@
             },
             "4": {
               "name": "storage.modifier.syntax.viml"
-            }
+            },
           },
           "match": "(syn|syntax)\\s+(cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
           "patterns": [],
@@ -60,7 +71,7 @@
             },
             "5": {
               "name": "variable.other.viml",
-            }
+            },
           },
           "match": "(hi|highlight)(?:\\s+)(def|default)(?:\\s+)(link)(?:\\s+)(\\w+)(?:\\s+)(\\w+)",
           "patterns": [],

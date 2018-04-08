@@ -34,7 +34,7 @@
                     "end": "$",
                     "patterns": [
                         {
-                            "match": "\\{\\{\\{\\d$",
+                            "match": "\\{\\{\\{\\d?$",
                             "name": "comment.line.foldmarker.viml"
                         }
                     ]
@@ -45,10 +45,18 @@
                     "end": "$",
                     "patterns": [
                         {
-                            "match": "\\{\\{\\{\\d$",
+                            "match": "\\{\\{\\{\\d?$",
                             "name": "comment.line.foldmarker.viml"
                         }
                     ]
+                }
+            ]
+        },
+        "entity": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.viml",
+                    "match": "(([absg]\\:)?[a-zA-Z0-9_#.]{2,})\\b(?=\\()"
                 }
             ]
         },
@@ -116,7 +124,7 @@
                 },
                 {
                     "name": "support.type.option.viml",
-                    "match": "\\b(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
+                    "match": "\\b(bs|background|backspace|backupdir|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldnestmax|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|modelines|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|sidescrolloff|sidescroll|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|timeoutlen|undodir|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
                 }
             ]
         },
@@ -148,10 +156,6 @@
                 },
                 {
                     "match": "/(\\\\\\\\|\\\\/|[^\\n/])*/",
-                    "name": "string.regexp.viml"
-                },
-                {
-                    "match": "\\+(\\\\\\\\|\\\\/|[^\\n/])*\\+",
                     "name": "string.regexp.viml"
                 }
             ]
@@ -204,15 +208,22 @@
                 },
                 {
                     "name": "keyword.other.syntax.viml",
-                    "match": "\\b(contained|excludenl|keepend|oneline|skipwhite|transparent)\\b"
+                    "match": "\\b(contained|display|excludenl|keepend|oneline|skipnl|skipwhite|transparent)\\b"
                 },
                 {
                     "name": "keyword.other.syntax.viml",
-                    "match": "\\b(add|containedin|contains|matchgroup|nextgroup)"
+                    "match": "\\b(add|containedin|contains|matchgroup|nextgroup)\\="
                 },
                 {
-                    "name": "keyword.other.syntax.region.viml",
-                    "match": "\\b(start|skip|end)"
+                    "captures": {
+                        "1": {
+                            "name": "keyword.other.syntax-range.viml"
+                        },
+                        "3": {
+                            "name": "string.regexp.viml"
+                        }
+                    },
+                    "match": "((start|skip|end)\\=)(\\+\\S+\\+\\s)?"
                 },
                 {
                     "captures": {
@@ -259,7 +270,11 @@
             "patterns": [
                 {
                     "name": "keyword.control.viml",
-                    "match": "\\b(if|while|for|return|end(if|for|while)?|au(g|group)|else(if|)?|do|in| : )\\b"
+                    "match": "\\b(if|while|for|return|au(g|group)|else(if|)?|do|in)\\b"
+                },
+                {
+                    "name": "keyword.control.viml",
+                    "match": "\\b(end|endif|endfor|endwhile)\\s|$"
                 },
                 {
                     "name": "keyword.control.viml",
@@ -313,8 +328,7 @@
                     "match": "([0-9]+)"
                 }
             ]
-        },
-        "entity": {}
+        }
     },
     "$schema": "https://raw.githubusercontent.com/dunstontc/textmate/master/schema/tmLanguage.schema.json",
     "name": "viml",

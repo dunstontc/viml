@@ -12,7 +12,7 @@
         },
         {
           "name": "support.type.option.viml",
-          "match": "\\b(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
+          "match": "\\b(bs|background|backspace|backupdir|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldnestmax|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|modelines|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|sidescrolloff|sidescroll|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|timeoutlen|undodir|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
         }
       ]
     },

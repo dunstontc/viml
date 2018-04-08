@@ -1,6 +1,6 @@
 {
     "name": "viml",
-    "displayName": "viml",
+    "displayName": "vscode-viml-syntax",
     "description": "vscode-vim-syntax",
     "version": "0.1.4",
     "publisher": "dunstontc",
