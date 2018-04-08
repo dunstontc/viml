@@ -3,26 +3,26 @@
     "operators": {
       "patterns": [
         {
-            "name": "keyword.operator.viml",
-            "match": "([#+?!=~\\\\])"
+          "name": "keyword.operator.viml",
+          "match": "([#+?!=~\\\\])"
         },
         {
-            "name": "keyword.operator.viml",
-            "match": " ([:+-.]|[&|]{2})( |$)"
+          "name": "keyword.operator.viml",
+          "match": " ([:\\-.]|[&|]{2})( |$)"
         },
         {
-            "name": "keyword.operator.viml",
-            "match": "([.]{3})"
+          "name": "keyword.operator.viml",
+          "match": "([.]{3})"
         },
         {
-            "name": "keyword.operator.viml",
-            "match": "( [<>] )"
+          "name": "keyword.operator.viml",
+          "match": "( [<>] )"
         },
         {
-            "name": "keyword.operator.viml",
-            "match": "(>=)"
+          "name": "keyword.operator.viml",
+          "match": "(>=)"
         }
-    ]
+      ]
     }
   }
 }

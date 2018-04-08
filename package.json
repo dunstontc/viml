@@ -8,6 +8,9 @@
         "type": "git",
         "url": "https://github.com/dunstontc/viml.git"
     },
+    "scripts": {
+      "start": "gulp watch"
+    },
     "engines": {
         "vscode": "^1.20.0"
     },

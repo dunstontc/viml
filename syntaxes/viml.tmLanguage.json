@@ -1,12 +1,82 @@
 {
     "repository": {
+        "commands": {
+            "patterns": [
+                {
+                    "name": "storage.other.command.viml",
+                    "match": "\\bcom(\\s|\\!)"
+                },
+                {
+                    "name": "storage.other.command.viml",
+                    "match": "\\bau(\\s|\\!)"
+                },
+                {
+                    "begin": "(aug(roup)?)",
+                    "end": "(augroup\\sEND|$)",
+                    "name": "support.function.augroup.viml"
+                }
+            ]
+        },
         "comment": {
             "patterns": [
+                {
+                    "begin": "((\\s+)?\"\"\")",
+                    "end": "^(?!\")",
+                    "name": "comment.block.documentation.viml"
+                },
+                {
+                    "match": "^\"\\svim:.*",
+                    "name": "comment.block.modeline.viml"
+                },
+                {
+                    "name": "comment.line.viml",
+                    "begin": "(\\s+\"\\s+)(?!\")",
+                    "end": "$",
+                    "patterns": [
+                        {
+                            "match": "\\{\\{\\{\\d$",
+                            "name": "comment.line.foldmarker.viml"
+                        }
+                    ]
+                },
                 {
                     "name": "comment.line.viml",
                     "begin": "^(\\s+)?\"",
                     "end": "$",
-                    "patterns": []
+                    "patterns": [
+                        {
+                            "match": "\\{\\{\\{\\d$",
+                            "name": "comment.line.foldmarker.viml"
+                        }
+                    ]
+                }
+            ]
+        },
+        "map": {
+            "patterns": [
+                {
+                    "name": "storage.map.viml",
+                    "match": "\\b([cinostvx]?(nore)?map)\\b"
+                },
+                {
+                    "name": "storage.type.map.viml",
+                    "match": "([<](?i:BUFFER|EXPR|SILENT|SID)[>])"
+                },
+                {
+                    "name": "constant.language.map.viml",
+                    "match": "(?i:[<](BS|BAR|CR|DEL|ESC|SPACE|LEADER|Plug|nop)[>])"
+                },
+                {
+                    "name": "constant.language.map.viml",
+                    "match": "([<](([cCaAmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
+                },
+                {
+                    "name": "constant.language.map.viml",
+                    "match": "([<]([cCaAmMsS]-[a-zA-Z0-9])[>])"
+                },
+                {
+                    "name": "constant.language.map.viml",
+                    "match": "([<](F[0-9]+)[>])"
                 }
             ]
         },
@@ -18,7 +88,7 @@
                 },
                 {
                     "name": "keyword.operator.viml",
-                    "match": " ([:+-.]|[&|]{2})( |$)"
+                    "match": " ([:\\-.]|[&|]{2})( |$)"
                 },
                 {
                     "name": "keyword.operator.viml",
@@ -37,16 +107,28 @@
         "option": {
             "patterns": [
                 {
-                    "name": "support.variable.option.viml",
-                    "match": "(?i:foldmethod)"
-                },
-                {
                     "name": "support.type.setting.viml",
-                    "match": "(?i:\\b(no)?(cursorline|hidden|list|magic|modifiable|spell|swapfile|wrap))"
+                    "match": "(?i:\\b(no)?(cursorline|hidden|magic|modifiable|spell|swapfile|wrap))"
                 },
                 {
                     "name": "support.type.option.viml",
-                    "match": "(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|syntax|tabpagemax|tabstop|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildmode|winminheight)(?==)"
+                    "match": "(?i:\\b(no)?(cursorline|hidden|laststatus|modifiable|spell|statusline|swapfile|wrap))"
+                },
+                {
+                    "name": "support.type.option.viml",
+                    "match": "\\b(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punction.parens.viml",
+                    "match": "([()])"
+                },
+                {
+                    "name": "punction.comma.viml",
+                    "match": "([,])"
                 }
             ]
         },
@@ -63,6 +145,46 @@
                     "begin": "'",
                     "end": "('|$)",
                     "patterns": []
+                },
+                {
+                    "match": "/(\\\\\\\\|\\\\/|[^\\n/])*/",
+                    "name": "string.regexp.viml"
+                },
+                {
+                    "match": "\\+(\\\\\\\\|\\\\/|[^\\n/])*\\+",
+                    "name": "string.regexp.viml"
+                }
+            ]
+        },
+        "support": {
+            "patterns": [
+                {
+                    "name": "support.function.viml",
+                    "match": "(add|call|delete|empty|extend|get|has|isdirectory|join|printf)(?=\\()"
+                },
+                {
+                    "name": "support.function.viml",
+                    "match": "\\b(echo(m|hl)?|exe(cute)?|redir|redraw|sleep|so(urce)?|wincmd|setf)\\b"
+                },
+                {
+                    "name": "support.type.builtin.viml",
+                    "match": "(v\\:(true|false|count|exception|operator|register|shell_error|val|version))"
+                },
+                {
+                    "name": "support.type.builtin.viml",
+                    "match": "(&(cpo|omnifunc|paste|previewwindow|rtp|tags|term|wrap|shell(cmdflag|redir)?))"
+                },
+                {
+                    "name": "support.variable.args.viml",
+                    "match": "\\<args\\>"
+                },
+                {
+                    "name": "support.type.syntax.viml",
+                    "match": "(None|ErrorMsg|WarningMsg)"
+                },
+                {
+                    "name": "support.type.event.viml",
+                    "match": "\\b(BufNewFile|BufReadPre|BufRead|BufReadPost|BufReadCmd|FileReadPre|FileReadPost|FileReadCmd|FilterReadPre|FilterReadPost|StdinReadPre|StdinReadPost|BufWrite|BufWritePre|BufWritePost|BufWriteCmd|FileWritePre|FileWritePost|FileWriteCmd|FileAppendPre|FileAppendPost|FileAppendCmd|FilterWritePre|FilterWritePost|BufAdd|BufCreate|BufDelete|BufWipeout|BufFilePre|BufFilePost|BufEnter|BufLeave|BufWinEnter|BufWinLeave|BufUnload|BufHidden|BufNew|SwapExists|TermOpen|TermClose|FileType|Syntax|OptionSet|VimEnter|GUIEnter|GUIFailed|TermResponse|QuitPre|VimLeavePre|VimLeave|DirChanged|FileChangedShell|FileChangedShellPost|FileChangedRO|ShellCmdPost|ShellFilterPost|CmdUndefined|FuncUndefined|SpellFileMissing|SourcePre|SourceCmd|VimResized|FocusGained|FocusLost|CursorHold|CursorHoldI|CursorMoved|CursorMovedI|WinNew|WinEnter|WinLeave|TabEnter|TabLeave|TabNew|TabNewEntered|TabClosed|CmdlineEnter|CmdlineLeave|CmdwinEnter|CmdwinLeave|InsertEnter|InsertChange|InsertLeave|InsertCharPre|TextYankPost|TextChanged|TextChangedI|ColorScheme|RemoteReply|QuickFixCmdPre|QuickFixCmdPost|SessionLoadPost|MenuPopup|CompleteDone|User)\\b"
                 }
             ]
         },
@@ -74,7 +196,7 @@
                 },
                 {
                     "name": "keyword.control.syntax.viml",
-                    "match": "syn case (ignore|match)"
+                    "match": "syn(tax)? case (ignore|match)"
                 },
                 {
                     "name": "keyword.control.syntax.viml",
@@ -107,7 +229,7 @@
                             "name": "storage.modifier.syntax.viml"
                         }
                     },
-                    "match": "(syn|syntax)\\s+(case|cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
+                    "match": "(syn|syntax)\\s+(cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
                     "patterns": []
                 },
                 {
@@ -130,26 +252,6 @@
                     },
                     "match": "(hi|highlight)(?:\\s+)(def|default)(?:\\s+)(link)(?:\\s+)(\\w+)(?:\\s+)(\\w+)",
                     "patterns": []
-                }
-            ]
-        },
-        "storage": {
-            "patterns": [
-                {
-                    "match": "\\b(call|let|unlet|set(l|local)?|com(mand)?|abort|autocmd|color(scheme)?)\\b",
-                    "name": "storage.viml"
-                },
-                {
-                    "name": "storage.map.viml",
-                    "match": "\\b([cinostvx]?(nore)?map)\\b"
-                },
-                {
-                    "name": "storage.type.viml",
-                    "match": "([<](?i:BUFFER|EXPR|SILENT|SID)[>])"
-                },
-                {
-                    "name": "storage.plugin.viml",
-                    "match": "(Plug|Plugin)"
                 }
             ]
         },
@@ -176,11 +278,15 @@
                 }
             ]
         },
-        "entity": {
+        "storage": {
             "patterns": [
                 {
-                    "name": "entity.name.function.viml",
-                    "match": "(([absg]\\:)?[a-zA-Z0-9_#.]{2,})\\b(?=\\()"
+                    "match": "\\b(call|let|unlet|set(l|local)?|com(mand)?|abort|autocmd|color(scheme)?)\\b",
+                    "name": "storage.viml"
+                },
+                {
+                    "name": "storage.plugin.viml",
+                    "match": "\\b(Plug|Plugin)\\b"
                 }
             ]
         },
@@ -205,94 +311,10 @@
                 {
                     "name": "constant.numeric.viml",
                     "match": "([0-9]+)"
-                },
-                {
-                    "name": "constant.language.map.viml",
-                    "match": "(?i:[<](BS|BAR|CR|DEL|ESC|SPACE|LEADER|Plug|nop)[>])"
-                },
-                {
-                    "name": "constant.language.map.viml",
-                    "match": "([<](([cCaAmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
-                },
-                {
-                    "name": "constant.language.map.viml",
-                    "match": "([<]([cCaAmMsS]-[a-zA-Z0-9])[>])"
-                },
-                {
-                    "name": "constant.language.map.viml",
-                    "match": "([<](F[0-9]+)[>])"
                 }
             ]
         },
-        "support": {
-            "patterns": [
-                {
-                    "name": "support.function.viml",
-                    "match": "(add|call|delete|empty|extend|get|has|isdirectory|join|printf)(?=\\()"
-                },
-                {
-                    "name": "support.function.viml",
-                    "match": "\\b(echo(m|hl)?|exe(cute)?|redir|redraw|sleep|so(urce)?|wincmd|setf)\\b"
-                },
-                {
-                    "name": "support.type.builtin.viml",
-                    "match": "(v\\:(true|false|count|exception|operator|register|shell_error|val|version))"
-                },
-                {
-                    "name": "support.type.builtin.viml",
-                    "match": "(&(cpo|omnifunc|paste|previewwindow|rtp|tags|term|shell(cmdflag|redir)?)|wrap)"
-                },
-                {
-                    "name": "support.variable.args.viml",
-                    "match": "\\<args\\>"
-                },
-                {
-                    "name": "support.type.syntax.viml",
-                    "match": "(None|ErrorMsg|WarningMsg)"
-                }
-            ]
-        },
-        "punctuation": {
-            "patterns": [
-                {
-                    "name": "punction.parens.viml",
-                    "match": "([()])"
-                },
-                {
-                    "name": "punction.comma.viml",
-                    "match": "([,])"
-                }
-            ]
-        },
-        "meta": {
-            "patterns": [
-                {
-                    "name": "meta.docstring.viml",
-                    "match": "\"\"\""
-                }
-            ]
-        },
-        "commands": {
-            "patterns": [
-                {
-                    "name": "support.type.event.viml",
-                    "match": "\\b(BufNewFile|BufReadPre|BufRead|BufReadPost|BufReadCmd|FileReadPre|FileReadPost|FileReadCmd|FilterReadPre|FilterReadPost|StdinReadPre|StdinReadPost|BufWrite|BufWritePre|BufWritePost|BufWriteCmd|FileWritePre|FileWritePost|FileWriteCmd|FileAppendPre|FileAppendPost|FileAppendCmd|FilterWritePre|FilterWritePost|BufAdd|BufCreate|BufDelete|BufWipeout|BufFilePre|BufFilePost|BufEnter|BufLeave|BufWinEnter|BufWinLeave|BufUnload|BufHidden|BufNew|SwapExists|TermOpen|TermClose|FileType|Syntax|OptionSet|VimEnter|GUIEnter|GUIFailed|TermResponse|QuitPre|VimLeavePre|VimLeave|DirChanged|FileChangedShell|FileChangedShellPost|FileChangedRO|ShellCmdPost|ShellFilterPost|CmdUndefined|FuncUndefined|SpellFileMissing|SourcePre|SourceCmd|VimResized|FocusGained|FocusLost|CursorHold|CursorHoldI|CursorMoved|CursorMovedI|WinNew|WinEnter|WinLeave|TabEnter|TabLeave|TabNew|TabNewEntered|TabClosed|CmdlineEnter|CmdlineLeave|CmdwinEnter|CmdwinLeave|InsertEnter|InsertChange|InsertLeave|InsertCharPre|TextYankPost|TextChanged|TextChangedI|ColorScheme|RemoteReply|QuickFixCmdPre|QuickFixCmdPost|SessionLoadPost|MenuPopup|CompleteDone|User)\\b"
-                },
-                {
-                    "name": "storage.other.command.viml",
-                    "match": "\\bcom"
-                },
-                {
-                    "name": "support.type.option.viml",
-                    "match": "(?i:\\b(no)?(cursorline|hidden|laststatus|list|modifiable|spell|statusline|swapfile|wrap))"
-                },
-                {
-                    "begin": "(aug(roup)?)",
-                    "end": "(augroup\\sEND|$)",
-                    "name": "support.function.augroup.viml"
-                }
-            ]
-        }
+        "entity": {}
     },
     "$schema": "https://raw.githubusercontent.com/dunstontc/textmate/master/schema/tmLanguage.schema.json",
     "name": "viml",
@@ -309,9 +331,6 @@
         },
         {
             "include": "#keyword"
-        },
-        {
-            "include": "#meta"
         },
         {
             "include": "#punctuation"
@@ -336,6 +355,9 @@
         },
         {
             "include": "#option"
+        },
+        {
+            "include": "#map"
         }
     ]
 }

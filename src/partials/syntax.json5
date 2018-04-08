@@ -2,70 +2,70 @@
   "repository": {
     "syntax": {
       "patterns": [
-          {
-              "name": "support.variable.syntax.option.viml",
-              "match": "nohl"
+        {
+          "name": "support.variable.syntax.option.viml",
+          "match": "nohl",
+        },
+        {
+          "name": "keyword.control.syntax.viml",
+          "match": "syn(tax)? case (ignore|match)",
+        },
+        {
+          "name": "keyword.control.syntax.viml",
+          "match": "syn(tax)? (clear|enable|off|on|manual|sync)",
+        },
+        {
+          "name": "keyword.other.syntax.viml",
+          "match": "\\b(contained|excludenl|keepend|oneline|skipwhite|transparent)\\b",
+        },
+        {
+          "name": "keyword.other.syntax.viml",
+          "match": "\\b(add|containedin|contains|matchgroup|nextgroup)",
+        },
+        {
+          "name": "keyword.other.syntax.region.viml",
+          "match": "\\b(start|skip|end)",
+        },
+        {
+          "captures": {
+            "0": {
+              "name": "support.type.syntax.viml"
+            },
+            "1": {
+              "name": "storage.syntax.viml"
+            },
+            "3": {
+              "name": "variable.other.syntax-scope.viml"
+            },
+            "4": {
+              "name": "storage.modifier.syntax.viml"
+            }
           },
-          {
-              "name": "keyword.control.syntax.viml",
-              "match": "syn case (ignore|match)"
+          "match": "(syn|syntax)\\s+(cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
+          "patterns": [],
+        },
+        {
+          "captures": {
+            "1": {
+              "name": "storage.highlight.viml",
+            },
+            "2": {
+              "name": "storage.modifier.syntax.viml",
+            },
+            "3": {
+              "name": "support.function.highlight.viml",
+            },
+            "4": {
+              "name": "variable.other.viml",
+            },
+            "5": {
+              "name": "variable.other.viml",
+            }
           },
-          {
-              "name": "keyword.control.syntax.viml",
-              "match": "syn(tax)? (clear|enable|off|on|manual|sync)"
-          },
-          {
-              "name": "keyword.other.syntax.viml",
-              "match": "\\b(contained|excludenl|keepend|oneline|skipwhite|transparent)\\b"
-          },
-          {
-              "name": "keyword.other.syntax.viml",
-              "match": "\\b(add|containedin|contains|matchgroup|nextgroup)"
-          },
-          {
-              "name": "keyword.other.syntax.region.viml",
-              "match": "\\b(start|skip|end)"
-          },
-          {
-              "captures": {
-                  "0": {
-                      "name": "support.type.syntax.viml"
-                  },
-                  "1": {
-                      "name": "storage.syntax.viml"
-                  },
-                  "3": {
-                      "name": "variable.other.syntax-scope.viml"
-                  },
-                  "4": {
-                      "name": "storage.modifier.syntax.viml"
-                  }
-              },
-              "match": "(syn|syntax)\\s+(case|cluster|keyword|match|region)(\\s+\\w+\\s+)(contained)?",
-              "patterns": []
-          },
-          {
-              "captures": {
-                  "1": {
-                      "name": "storage.highlight.viml"
-                  },
-                  "2": {
-                      "name": "storage.modifier.syntax.viml"
-                  },
-                  "3": {
-                      "name": "support.function.highlight.viml"
-                  },
-                  "4": {
-                      "name": "variable.other.viml"
-                  },
-                  "5": {
-                      "name": "variable.other.viml"
-                  }
-              },
-              "match": "(hi|highlight)(?:\\s+)(def|default)(?:\\s+)(link)(?:\\s+)(\\w+)(?:\\s+)(\\w+)",
-              "patterns": []
-          }
+          "match": "(hi|highlight)(?:\\s+)(def|default)(?:\\s+)(link)(?:\\s+)(\\w+)(?:\\s+)(\\w+)",
+          "patterns": [],
+        },
       ]
-  },
+    },
   }
 }

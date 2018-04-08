@@ -1,0 +1,32 @@
+{
+  "repository": {
+    "map": {
+      "patterns": [
+        {
+          "name": "storage.map.viml",
+          "match": "\\b([cinostvx]?(nore)?map)\\b",
+        },
+        {
+          "name": "storage.type.map.viml",
+          "match": "([<](?i:BUFFER|EXPR|SILENT|SID)[>])",
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "(?i:[<](BS|BAR|CR|DEL|ESC|SPACE|LEADER|Plug|nop)[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<](([cCaAmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<]([cCaAmMsS]-[a-zA-Z0-9])[>])"
+        },
+        {
+          "name": "constant.language.map.viml",
+          "match": "([<](F[0-9]+)[>])"
+        }
+      ]
+    }
+  }
+}

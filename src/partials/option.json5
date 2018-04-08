@@ -2,19 +2,19 @@
   "repository": {
     "option": {
       "patterns": [
-          {
-              "name": "support.variable.option.viml",
-              "match": "(?i:foldmethod)"
-          },
-          {
-              "name": "support.type.setting.viml",
-              "match": "(?i:\\b(no)?(cursorline|hidden|list|magic|modifiable|spell|swapfile|wrap))"
-          },
-          {
-              "name": "support.type.option.viml",
-              "match": "(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|syntax|tabpagemax|tabstop|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildmode|winminheight)(?==)"
-          }
+        {
+          "name": "support.type.setting.viml",
+          "match": "(?i:\\b(no)?(cursorline|hidden|magic|modifiable|spell|swapfile|wrap))"
+        },
+        {
+          "name": "support.type.option.viml",
+          "match": "(?i:\\b(no)?(cursorline|hidden|laststatus|modifiable|spell|statusline|swapfile|wrap))",
+        },
+        {
+          "name": "support.type.option.viml",
+          "match": "\\b(bs|background|backspace|bufhidden|buftype|clipboard|cmdheight|completeopt|commentstring|concealcursor|conceallevel|encoding|filetype|foldcolumn|foldlevel|foldlevelstart|foldmethod|foldtext|guifont|guioptions|history|iskeyword|langmenu|lines|linespace|listchars|mapleader|maplocalleader|mouse|omnifunc|pastetoggle|rulerformat|runtimepath|scrolloff|scrolljump|sessionoptions|shell|shiftwidth|shortmess|showbreak|syntax|tabpagemax|tabstop|term|undolevels|undoreload|viewoptions|virtualedit|whichwrap|wildignore|wildmode|winminheight)(?==)"
+        }
       ]
-  },
+    },
   }
 }

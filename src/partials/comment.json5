@@ -3,10 +3,35 @@
     "comment": {
       "patterns": [
         {
+          "begin": "((\\s+)?\"\"\")",
+          "end": "^(?!\")",
+          "name": "comment.block.documentation.viml",
+        },
+        {
+          "match": "^\"\\svim:.*",
+          "name": "comment.block.modeline.viml",
+        },
+        {
+          "name": "comment.line.viml",
+          "begin": "(\\s+\"\\s+)(?!\")",
+          "end": "$",
+          "patterns": [
+            {
+              "match": "\\{\\{\\{\\d$",
+              "name": "comment.line.foldmarker.viml",
+            },
+          ],
+        },
+        {
           "name": "comment.line.viml",
           "begin": "^(\\s+)?\"",
           "end": "$",
-          "patterns": [],
+          "patterns": [
+            {
+              "match": "\\{\\{\\{\\d$",
+              "name": "comment.line.foldmarker.viml",
+            },
+          ],
         },
         // {
         //   "captures": {

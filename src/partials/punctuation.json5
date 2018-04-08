@@ -1,0 +1,16 @@
+{
+  "repository": {
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punction.parens.viml",
+          "match": "([()])"
+        },
+        {
+          "name": "punction.comma.viml",
+          "match": "([,])"
+        }
+      ]
+    },
+  }
+}

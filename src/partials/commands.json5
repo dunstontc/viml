@@ -1,0 +1,21 @@
+{
+  "repository": {
+    "commands": {
+      "patterns": [
+        {
+          "name": "storage.other.command.viml",
+          "match": "\\bcom(\\s|\\!)",
+        },
+        {
+          "name": "storage.other.command.viml",
+          "match": "\\bau(\\s|\\!)",
+        },
+        {
+          "begin": "(aug(roup)?)",
+          "end": "(augroup\\sEND|$)",
+          "name": "support.function.augroup.viml",
+        },
+      ]
+    }
+  }
+}

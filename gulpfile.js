@@ -1,22 +1,22 @@
-const gulp   = require('gulp');
-const watch  = require('gulp-watch');
-const merge  = require('gulp-merge-json');
-const json5  = require('gulp-json5-to-json');
+const gulp  = require('gulp');
+const watch = require('gulp-watch');
+const merge = require('gulp-merge-json');
+const json5 = require('gulp-json5-to-json');
 
-gulp.task('default', () => {});
+gulp.task('default', () => { });
 
-gulp.task('parse-json', () =>
+gulp.task('compile-json', () =>
   gulp.src('./src/partials/*.json5')
-  .pipe(merge({
-    fileName: "viml.tmLanguage.json",
-    json5: true,
-  }))
-  .pipe(json5({
-    beautify: true,
-  }))
-  .pipe(gulp.dest('./syntaxes'))
+    .pipe(merge({
+      fileName: "viml.tmLanguage.json",
+      json5: true,
+    }))
+    .pipe(json5({
+      beautify: true,
+    }))
+    .pipe(gulp.dest('./syntaxes'))
 );
 
 gulp.task('watch', () =>
-  gulp.watch('./src/**/*.json5', [ 'parse-json' ])
+  gulp.watch('./src/**/*.json5', [ 'compile-json' ])
 );

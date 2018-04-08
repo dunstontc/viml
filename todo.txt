@@ -2,4 +2,6 @@
 2018-04-07 "filetype plugin indent on"
 2018-04-07 "<q-args>"
 2018-04-07 augroups
+2018-04-08 Scopes for function names. (ex: "scope#function()")
+
 
