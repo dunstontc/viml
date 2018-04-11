@@ -20,17 +20,13 @@ bower_components/**
 Build/**
 build/**
 dist/**
+.vsix
 
 # Local files
 .env
 .variables
 .ignore/**
 ignore/**
-
-# Python stuff
-**/__pycache__/
-*.pyc
-VENV
 
 # Logs
 **/*.map

@@ -48,8 +48,28 @@
     },
     "storage": {
       "patterns": [
+        // {
+        //   "match": "\\b(call|let|unlet|set(l|local)?|com(mand)?|abort|autocmd|color(scheme)?)\\b",
+        //   "name": "storage.viml",
+        // },
         {
-          "match": "\\b(call|let|unlet|set(l|local)?|com(mand)?|abort|autocmd|color(scheme)?)\\b",
+          "match": "\\b(call|let|unlet)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(abort|autocmd)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(set(l|local)?)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(com(mand)?)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(color(scheme)?)\\b",
           "name": "storage.viml",
         },
         {

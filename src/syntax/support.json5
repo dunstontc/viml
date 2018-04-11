@@ -16,7 +16,11 @@
         },
         {
           "name": "support.type.builtin.viml",
-          "match": "(&(cpo|omnifunc|paste|previewwindow|rtp|tags|term|wrap|shell(cmdflag|redir)?))"
+          "match": "(&(cpo|isk|omnifunc|paste|previewwindow|rtp|tags|term|wrap))"
+        },
+        {
+          "name": "support.type.builtin.viml",
+          "match": "(&(shell(cmdflag|redir)?))"
         },
         {
           "name": "support.variable.args.viml",
@@ -29,6 +33,10 @@
         {
           "name": "support.type.event.viml",
           "match": "\\b(BufNewFile|BufReadPre|BufRead|BufReadPost|BufReadCmd|FileReadPre|FileReadPost|FileReadCmd|FilterReadPre|FilterReadPost|StdinReadPre|StdinReadPost|BufWrite|BufWritePre|BufWritePost|BufWriteCmd|FileWritePre|FileWritePost|FileWriteCmd|FileAppendPre|FileAppendPost|FileAppendCmd|FilterWritePre|FilterWritePost|BufAdd|BufCreate|BufDelete|BufWipeout|BufFilePre|BufFilePost|BufEnter|BufLeave|BufWinEnter|BufWinLeave|BufUnload|BufHidden|BufNew|SwapExists|TermOpen|TermClose|FileType|Syntax|OptionSet|VimEnter|GUIEnter|GUIFailed|TermResponse|QuitPre|VimLeavePre|VimLeave|DirChanged|FileChangedShell|FileChangedShellPost|FileChangedRO|ShellCmdPost|ShellFilterPost|CmdUndefined|FuncUndefined|SpellFileMissing|SourcePre|SourceCmd|VimResized|FocusGained|FocusLost|CursorHold|CursorHoldI|CursorMoved|CursorMovedI|WinNew|WinEnter|WinLeave|TabEnter|TabLeave|TabNew|TabNewEntered|TabClosed|CmdlineEnter|CmdlineLeave|CmdwinEnter|CmdwinLeave|InsertEnter|InsertChange|InsertLeave|InsertCharPre|TextYankPost|TextChanged|TextChangedI|ColorScheme|RemoteReply|QuickFixCmdPre|QuickFixCmdPost|SessionLoadPost|MenuPopup|CompleteDone|User)\\b",
+        },
+        {
+          "name": "support.type.syntax-group.viml",
+          "match": "\\b(Comment|Constant|String|Character|Number|Boolean|Float|Identifier|Function|Statement|Conditional|Repeat|Label|Operator|Keyword|Exception|PreProc|Include|Define|Macro|PreCondit|Type|StorageClass|Structure|Typedef|Special|SpecialChar|Tag|Delimiter|SpecialComment|Debug|Underlined|Ignore|Error|Todo)\\b"
         },
       ]
     },
