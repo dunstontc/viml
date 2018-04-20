@@ -3,11 +3,11 @@
     "punctuation": {
       "patterns": [
         {
-          "name": "punction.parens.viml",
+          "name": "punctuation.parens.viml",
           "match": "([()])"
         },
         {
-          "name": "punction.comma.viml",
+          "name": "punctuation.comma.viml",
           "match": "([,])"
         }
       ]
