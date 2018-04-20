@@ -5,8 +5,8 @@ const json5 = require('gulp-json5-to-json');
 
 gulp.task('default', () => { });
 
-gulp.task('compile-json', () =>
-  gulp.src('./src/partials/*.json5')
+gulp.task('compile-json', () => {
+  gulp.src('./src/syntax/*.json5')
     .pipe(merge({
       fileName: "viml.tmLanguage.json",
       json5: true,
@@ -15,8 +15,9 @@ gulp.task('compile-json', () =>
       beautify: true,
     }))
     .pipe(gulp.dest('./syntaxes'))
-);
+});
 
-gulp.task('watch', () =>
+gulp.task('watch', () => {
+
   gulp.watch('./src/**/*.json5', [ 'compile-json' ])
-);
+});

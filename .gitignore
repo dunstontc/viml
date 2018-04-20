@@ -13,7 +13,7 @@ Thumbs.db
 .Trashes
 
 # dependencies
-node_modules/**
+**/node_modules/**
 bower_components/**
 
 # Built files
