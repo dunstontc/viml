@@ -16,11 +16,11 @@
         },
         {
           "name": "constant.language.map.viml",
-          "match": "([<](([cCaAmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
+          "match": "([<](([aAdDcCmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
         },
         {
           "name": "constant.language.map.viml",
-          "match": "([<]([cCaAmMsS]-[a-zA-Z0-9])[>])"
+          "match": "([<]([aAdDcCmMsS]-[a-zA-Z0-9])[>])"
         },
         {
           "name": "constant.language.map.viml",
