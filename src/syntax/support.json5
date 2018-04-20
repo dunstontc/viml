@@ -11,8 +11,9 @@
           "match": "\\b(echo(m|hl)?|exe(cute)?|redir|redraw|sleep|so(urce)?|wincmd|setf)\\b"
         },
         {
-          "name": "support.type.builtin.viml",
-          "match": "(v\\:(true|false|count|exception|operator|register|shell_error|val|version))"
+          "name": "support.type.builtin.vim-variable.viml",
+          // "match": "(v\\:(true|false|count|exception|operator|register|shell_error|val|version))"
+          "match": "(v\\:(beval_col|beval_bufnr|beval_lnum|beval_text|beval_winnr|char|charconvert_from|charconvert_to|cmdarg|cmdbang|count|count1|ctype|dying|errmsg|exception|fcs_reason|fcs_choice|fname_in|fname_out|fname_new|fname_diff|folddashes|foldlevel|foldend|foldstart|insertmode|key|lang|lc_time|lnum|mouse_win|mouse_lnum|mouse_col|oldfiles|operator|prevcount|profiling|progname|register|scrollstart|servername|searchforward|shell_error|statusmsg|swapname|swapchoice|swapcommand|termresponse|this_session|throwpoint|val|version|warningmsg|windowid))",
         },
         {
           "name": "support.type.builtin.viml",
