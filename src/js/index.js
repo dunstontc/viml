@@ -1,6 +1,6 @@
 // const fs = require('fs');
 const path = require('path');
-const vimOptions = require(path.join(__dirname, 'completions', 'options'));
+const vimOptions = require(path.join(__dirname, '..', 'completions', 'options'));
 
 // const ReadFile = (fileName) => {
 //   try {

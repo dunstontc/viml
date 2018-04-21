@@ -1,4 +1,5 @@
 
+
 " Vim syntax file
 " Language:	Vim 8.0 script
 " Maintainer:	Hirohito Higashi <h.east.727 ATMARK gmail.com>
