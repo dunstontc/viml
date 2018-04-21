@@ -48,10 +48,6 @@
     },
     "storage": {
       "patterns": [
-        // {
-        //   "match": "\\b(call|let|unlet|set(l|local)?|com(mand)?|abort|autocmd|color(scheme)?)\\b",
-        //   "name": "storage.viml",
-        // },
         {
           "match": "\\b(call|let|unlet)\\b",
           "name": "storage.viml",
@@ -73,13 +69,17 @@
           "name": "storage.viml",
         },
         {
-          "name": "storage.plugin.viml",
           "match": "\\b(Plug|Plugin)\\b",
+          "name": "storage.plugin.viml",
         },
       ]
     },
     "variable": {
       "patterns": [
+        {
+          "name": "variable.other.link.viml",
+          "match": "https?://\\S+",
+        },
         {
           "name": "variable.parameter.viml",
           "match": "(?<=\\()([a-zA-Z]+)(?=\\))",
@@ -98,7 +98,7 @@
         },
         {
           "name": "constant.numeric.viml",
-          "match": "([0-9]+)",
+          "match": "\\b([0-9]+)\\b",
         },
       ]
     },

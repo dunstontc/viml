@@ -3,20 +3,16 @@
     "syntax": {
       "patterns": [
         {
-          "name": "support.variable.syntax.option.viml",
-          "match": "nohl",
-        },
-        {
           "name": "keyword.control.syntax.viml",
           "match": "syn(tax)? case (ignore|match)",
         },
         {
           "name": "keyword.control.syntax.viml",
-          "match": "syn(tax)? (clear|enable|off|on|manual|sync)",
+          "match": "syn(tax)? (clear|enable|include|off|on|manual|sync)",
         },
         {
           "name": "keyword.other.syntax.viml",
-          "match": "\\b(contained|display|excludenl|keepend|oneline|skipnl|skipwhite|transparent)\\b",
+          "match": "\\b(contained|display|excludenl|fold|keepend|oneline|skipnl|skipwhite|transparent)\\b",
         },
         {
           "name": "keyword.other.syntax.viml",

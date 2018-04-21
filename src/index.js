@@ -1,20 +1,19 @@
-// const path = require('path');
-const fs = require('fs');
-const vimOptions = require('./data/options')
+// const fs = require('fs');
+const path = require('path');
+const vimOptions = require(path.join(__dirname, 'completions', 'options'));
 
-console.log(vimOptions.length);
+// const ReadFile = (fileName) => {
+//   try {
+//     var data = fs.readFileSync(fileName, 'utf8');
+//     console.log(data);
+//   } catch (err) {
+//     console.log('Error:', err.stack);
+//   }
+// };
 
+// ReadFile()
 
-const ReadFile = (fileName) => {
-  // fs.readFile('my-file.txt', 'utf8', function(err, data) {
-  //     if (err) throw err;
-  //     console.log(data);
-  // });
-  try {
-    var data = fs.readFileSync(fileName, 'utf8');
-    console.log(data);
-  } catch (e) {
-    console.log('Error:', e.stack);
-  }
-};
-
+let optionsArray = [];
+let allOptions = vimOptions.map(opt => optionsArray.push(opt.option));
+// console.log(optionsArray);
+process.stdout.write(JSON.stringify(optionsArray));

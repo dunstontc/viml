@@ -16,10 +16,8 @@
           "begin": "(\\s+\"\\s+)(?!\")",
           "end": "$",
           "patterns": [
-            {
-              "match": "\\{\\{\\{\\d?$",
-              "name": "comment.line.foldmarker.viml",
-            },
+            { "match": "\\{\\{\\{\\d?$", "name": "comment.line.foldmarker.viml" },
+            { "match": "\\}\\}\\}\\d?",  "name": "comment.line.foldmarker.viml" },
           ],
         },
         {
@@ -27,21 +25,10 @@
           "begin": "^(\\s+)?\"",
           "end": "$",
           "patterns": [
-            {
-              "match": "\\{\\{\\{\\d?$",
-              "name": "comment.line.foldmarker.viml",
-            },
+            { "match": "\\{\\{\\{\\d?$", "name": "comment.line.foldmarker.viml" },
+            { "match": "\\}\\}\\}\\d?",  "name": "comment.line.foldmarker.viml" },
           ],
         },
-        // {
-        //   "captures": {
-        //     "1": {
-        //       "name": "punctuation.definition.comment.vim"
-        //     }
-        //   },
-        //   "match": "(?!\\$)(\")(?!\\{).*$\\n?",
-        //   "name": "comment.line.quotes.viml"
-        // },
       ]
     }
   }

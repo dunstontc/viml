@@ -3,29 +3,52 @@
     "map": {
       "patterns": [
         {
-          "name": "storage.map.viml",
-          "match": "\\b([cinostvx]?(nore)?map)\\b",
+          "begin": "(\\<)",
+          "beginCaptures": { "1": { "name": "punctuation.definition.map.viml" } },
+          "end": "(\\>|\\s)",
+          "endCaptures": {   "1": { "name": "punctuation.definition.map.viml" } },
+          "patterns": [
+            {
+              "name": "constant.character.map.rhs.viml",
+              "match": "(?<=:\\s)(.+)",
+            },
+            {
+              "name": "constant.character.map.special.viml",
+              "match": "(?i:(bang|buffer|expr|nop|plug|sid|silent))",
+            },
+            {
+              "name": "constant.character.map.key.viml",
+              "match": "(?i:([adcms]-\\w))",
+            },
+            {
+              "name": "constant.character.map.key.fn.viml",
+              "match": "(?i:(F[0-9]+))",
+            },
+            {
+              "name": "constant.character.map.viml",
+              "match": "(?i:(bs|bar|cr|del|down|esc|left|right|space|tab|up|leader))",
+            },
+          ],
         },
+
         {
           "name": "storage.type.map.viml",
-          "match": "([<](?i:BUFFER|EXPR|SILENT|SID)[>])",
-        },
-        {
-          "name": "constant.language.map.viml",
-          "match": "(?i:[<](BS|BAR|CR|DEL|ESC|SPACE|LEADER|Plug|nop)[>])"
-        },
-        {
-          "name": "constant.language.map.viml",
-          "match": "([<](([aAdDcCmMsS]\\-)?(?i:Tab|UP|DOWN|LEFT|RIGHT|SPACE))[>])"
-        },
-        {
-          "name": "constant.language.map.viml",
-          "match": "([<]([aAdDcCmMsS]-[a-zA-Z0-9])[>])"
-        },
-        {
-          "name": "constant.language.map.viml",
-          "match": "([<](F[0-9]+)[>])"
+          "match": "(\\b([cinostvx]?(nore)?map)\\b)",
         }
+
+        // {
+        //   "match": "(\\b([cinostvx]?(nore)?map)\\b)(\\s+)(\\S+)(\\s+)(.+)",
+        //   "captures": {
+        //     // "0": { "name": "storage.map.viml" },
+        //     "1": { "name": "storage.map.command.viml" },
+        //     "4": { "name": "storage.map.space.viml" },
+        //     "5": { "name": "storage.map.lhs.viml" },
+        //     "6": { "name": "storage.map.space.viml" },
+        //     "7": { "name": "storage.map.rhs.viml" },
+        //   },
+        //   "patterns": [],
+        // },
+
       ]
     }
   }

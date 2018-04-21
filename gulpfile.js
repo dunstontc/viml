@@ -1,5 +1,5 @@
 const gulp  = require('gulp');
-const watch = require('gulp-watch');
+// const watch = require('gulp-watch');
 const merge = require('gulp-merge-json');
 const json5 = require('gulp-json5-to-json');
 
@@ -14,10 +14,9 @@ gulp.task('compile-json', () => {
     .pipe(json5({
       beautify: true,
     }))
-    .pipe(gulp.dest('./syntaxes'))
+    .pipe(gulp.dest('./syntaxes'));
 });
 
 gulp.task('watch', () => {
-
-  gulp.watch('./src/**/*.json5', [ 'compile-json' ])
+  gulp.watch('./src/**/*.json5', [ 'compile-json' ]);
 });

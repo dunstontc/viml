@@ -3,8 +3,8 @@
     "entity": {
       "patterns": [
           {
-              "name": "entity.name.function.viml",
-              "match": "(([absg]\\:)?[a-zA-Z0-9_#.]{2,})\\b(?=\\()"
+            "name": "entity.name.function.viml",
+            "match": "(([absg]\\:)?[a-zA-Z0-9_#.]{2,})\\b(?=\\()"
           }
       ]
   },

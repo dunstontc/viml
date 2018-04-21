@@ -11,10 +11,29 @@
           "match": "\\bau(\\s|\\!)",
         },
         {
+          "name": "storage.other.command.bang.viml",
+          "match": "-bang",
+        },
+        {
+          "name": "storage.other.command.args.viml",
+          "match": "-nargs=[*+0-9]+",
+        },
+        {
+          "name": "storage.other.command.completion.viml",
+          "match": "-complete=\\S+",
+        },
+        {
           "begin": "(aug(roup)?)",
           "end": "(augroup\\sEND|$)",
           "name": "support.function.augroup.viml",
         },
+
+        // {
+        //   "name": "support.other.command.highlight.viml",
+        //   "match": "(hi(ghlight)?)(\\w+)((gui(fg|bg)?|cterm(fg|bg)?)=\\S+)",
+        //   "captures": {
+        //   },
+        // },
       ]
     }
   }

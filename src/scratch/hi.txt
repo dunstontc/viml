@@ -1,0 +1,2 @@
+hi PmenuThumb  guifg=#F8F8F8 guibg=#8A95A7 gui=NONE ctermfg=lightgray ctermbg=darkcyan cterm=NONE
+(hi(ghlight)?)(\w+)((gui(fg|bg)?|cterm(fg|bg)?)=\S+)

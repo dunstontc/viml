@@ -1206,7 +1206,7 @@
   },
   {
     "option": "sessionoptions",
-    "shortname": " ssop",
+    "shortname": "ssop",
     "description": "options for |:mksession|"
   },
   {

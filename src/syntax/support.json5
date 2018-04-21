@@ -29,7 +29,7 @@
         },
         {
           "name": "support.type.syntax.viml",
-          "match": "(None|ErrorMsg|WarningMsg)"
+          "match": "\\b(None|ErrorMsg|WarningMsg)\\b"
         },
         {
           "name": "support.type.event.viml",
