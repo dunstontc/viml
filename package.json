@@ -17,7 +17,7 @@
         "link": "ln -s $(pwd) ~/.vscode-insiders/extensions",
         "unlink": "rm -r ~/.vscode-insiders/extensions/vscode-viml",
         "start": "gulp watch",
-        "test": "node ./src/index.js"
+        "test": "node ./src/js/index.js"
     },
     "engines": {
         "vscode": "^1.20.0"

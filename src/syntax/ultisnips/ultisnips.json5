@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dunstontc/textmate/master/schema/tmLanguage.schema.json",
+  "name": "viml",
+  "scopeName": "source.viml",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#constant" },
+    { "include": "#entity" },
+    { "include": "#keyword" },
+    { "include": "#punctuation" },
+    { "include": "#storage" },
+    { "include": "#strings" },
+    { "include": "#support" },
+    { "include": "#variable" },
+
+    { "include": "#syntax" },
+    { "include": "#commands" },
+    { "include": "#option" },
+    { "include": "#map" },
+  ],
+  "repository": {
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.viml",
+          "match": "\\b(end|endif|endfor|endwhile)\\s|$",
+        },
+        {
+          "name": "keyword.function.viml",
+          "match": "\\b(fun|func|function|endfunction|endfunc)\\b",
+        },
+        {
+          "name": "keyword.other.viml",
+          "match": "\\b(normal|silent)\\b",
+        },
+        {
+          "include": "#operators",
+        },
+      ]
+    },
+    "storage": {
+      "patterns": [
+        {
+          "match": "\\b(call|let|unlet)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(abort|autocmd)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(set(l|local)?)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(com(mand)?)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(color(scheme)?)\\b",
+          "name": "storage.viml",
+        },
+        {
+          "match": "\\b(Plug|Plugin)\\b",
+          "name": "storage.plugin.viml",
+        },
+      ]
+    },
+    "variable": {
+      "patterns": [
+        {
+          "name": "variable.other.link.viml",
+          "match": "https?://\\S+",
+        },
+        {
+          "name": "variable.parameter.viml",
+          "match": "(?<=\\()([a-zA-Z]+)(?=\\))",
+        },
+        {
+          "name": "variable.other.viml",
+          "match": "\\b([absgl]:[a-zA-Z0-9_.#]+)\\b(?!\\()",
+        },
+      ]
+    },
+    "constant": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.viml",
+          "match": "\\b(true|false)\\b",
+        },
+        {
+          "name": "constant.numeric.viml",
+          "match": "\\b([0-9]+)\\b",
+        },
+      ]
+    },
+    "entity": {},
+    "support": {},
+    "punctuation": {},
+    "strings": {},
+    "comment": {},
+    "operators": {},
+    "commands": {},
+    "map": {},
+    "option": {},
+    "syntax": {},
+  }
+}

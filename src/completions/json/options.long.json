@@ -1,0 +1,1374 @@
+[
+    {
+        "label": "aleph",
+        "detail": "ASCII code of the letter Aleph (Hebrew)"
+    },
+    {
+        "label": "allowrevins",
+        "detail": "allow CTRL-_ in Insert and Command-line mode"
+    },
+    {
+        "label": "altkeymap",
+        "detail": "for default second language (Farsi/Hebrew)"
+    },
+    {
+        "label": "ambiwidth",
+        "detail": "what to do with Unicode chars of ambiguous width"
+    },
+    {
+        "label": "autochdir",
+        "detail": "change directory to the file in the current window"
+    },
+    {
+        "label": "arabic",
+        "detail": "for Arabic as a default second language"
+    },
+    {
+        "label": "arabicshape",
+        "detail": "do shaping for Arabic characters"
+    },
+    {
+        "label": "autoindent",
+        "detail": "take indent for new line from previous line"
+    },
+    {
+        "label": "autoread",
+        "detail": "autom. read file when changed outside of Vim"
+    },
+    {
+        "label": "autowrite",
+        "detail": "automatically write file if changed"
+    },
+    {
+        "label": "autowriteall",
+        "detail": "as autowrite, but works with more commands"
+    },
+    {
+        "label": "background",
+        "detail": "dark or light, used for highlight colors"
+    },
+    {
+        "label": "backspace",
+        "detail": "how backspace works at start of line"
+    },
+    {
+        "label": "backup",
+        "detail": "keep backup file after overwriting a file"
+    },
+    {
+        "label": "backupcopy",
+        "detail": "make backup as a copy, dont rename the file"
+    },
+    {
+        "label": "backupdir",
+        "detail": "list of directories for the backup file"
+    },
+    {
+        "label": "backupext",
+        "detail": "extension used for the backup file"
+    },
+    {
+        "label": "backupskip",
+        "detail": "no backup for files that match these patterns"
+    },
+    {
+        "label": "balloondelay",
+        "detail": "delay in mS before a balloon may pop up"
+    },
+    {
+        "label": "ballooneval",
+        "detail": "switch on balloon evaluation"
+    },
+    {
+        "label": "balloonexpr",
+        "detail": "expression to show in balloon"
+    },
+    {
+        "label": "belloff",
+        "detail": "do not ring the bell for these reasons"
+    },
+    {
+        "label": "binary",
+        "detail": "read/write/edit file in binary mode"
+    },
+    {
+        "label": "bomb",
+        "detail": "prepend a Byte Order Mark to the file"
+    },
+    {
+        "label": "breakat",
+        "detail": "characters that may cause a line break"
+    },
+    {
+        "label": "breakindent",
+        "detail": "wrapped line repeats indent"
+    },
+    {
+        "label": "breakindentopt",
+        "detail": "settings for breakindent"
+    },
+    {
+        "label": "browsedir",
+        "detail": "which directory to start browsing in"
+    },
+    {
+        "label": "bufhidden",
+        "detail": "what to do when buffer is no longer in window"
+    },
+    {
+        "label": "buflisted",
+        "detail": "whether the buffer shows up in the buffer list"
+    },
+    {
+        "label": "buftype",
+        "detail": "special type of buffer"
+    },
+    {
+        "label": "casemap",
+        "detail": "specifies how case of letters is changed"
+    },
+    {
+        "label": "cdpath",
+        "detail": "list of directories searched with :cd"
+    },
+    {
+        "label": "cedit",
+        "detail": "key used to open the command-line window"
+    },
+    {
+        "label": "charconvert",
+        "detail": "expression for character encoding conversion"
+    },
+    {
+        "label": "cindent",
+        "detail": "do C program indenting"
+    },
+    {
+        "label": "cinkeys",
+        "detail": "keys that trigger indent when cindent is set"
+    },
+    {
+        "label": "cinlabels",
+        "detail": "how to do indenting when cindent is set"
+    },
+    {
+        "label": "cinwords",
+        "detail": "words where si and cin add an indent"
+    },
+    {
+        "label": "clipboard",
+        "detail": "use the clipboard as the unnamed register"
+    },
+    {
+        "label": "cmdheight",
+        "detail": "number of lines to use for the command-line"
+    },
+    {
+        "label": "cmdwinheight",
+        "detail": "height of the command-line window"
+    },
+    {
+        "label": "colorcolumn",
+        "detail": "columns to highlight"
+    },
+    {
+        "label": "columns",
+        "detail": "number of columns in the display"
+    },
+    {
+        "label": "comments",
+        "detail": "patterns that can start a comment line"
+    },
+    {
+        "label": "commentstring",
+        "detail": "template for comments; used for fold marker"
+    },
+    {
+        "label": "complete",
+        "detail": "specify how Insert mode completion works"
+    },
+    {
+        "label": "completefunc",
+        "detail": "function to be used for Insert mode completion"
+    },
+    {
+        "label": "completeopt",
+        "detail": "labels for Insert mode completion"
+    },
+    {
+        "label": "concealcursor",
+        "detail": "whether concealable text is hidden in cursor line"
+    },
+    {
+        "label": "conceallevel",
+        "detail": "whether concealable text is shown or hidden"
+    },
+    {
+        "label": "confirm",
+        "detail": "ask what to do about unsaved/read-only files"
+    },
+    {
+        "label": "copyindent",
+        "detail": "make autoindent use existing indent structure"
+    },
+    {
+        "label": "cplabels",
+        "detail": "flags for Vi-compatible behavior"
+    },
+    {
+        "label": "cscopepathcomp",
+        "detail": "how many components of the path to show"
+    },
+    {
+        "label": "cscopeprg",
+        "detail": "command to execute cscope"
+    },
+    {
+        "label": "cscopequickfix",
+        "detail": "use quickfix window for cscope results"
+    },
+    {
+        "label": "cscoperelative",
+        "detail": "Use cscope.out path basename as prefix"
+    },
+    {
+        "label": "cscopetag",
+        "detail": "use cscope for tag commands"
+    },
+    {
+        "label": "cscopetagorder",
+        "detail": "determines :cstag search order"
+    },
+    {
+        "label": "cscopeverbose",
+        "detail": "give messages when adding a cscope database"
+    },
+    {
+        "label": "cursorbind",
+        "detail": "move cursor in window as it moves in other windows"
+    },
+    {
+        "label": "cursorcolumn",
+        "detail": "highlight the screen column of the cursor"
+    },
+    {
+        "label": "cursorline",
+        "detail": "highlight the screen line of the cursor"
+    },
+    {
+        "label": "debug",
+        "detail": "set to msg to see all error messages"
+    },
+    {
+        "label": "define",
+        "detail": "pattern to be used to find a macro definition"
+    },
+    {
+        "label": "delcombine",
+        "detail": "delete combining characters on their own"
+    },
+    {
+        "label": "dictionary",
+        "detail": "list of file names used for keyword completion"
+    },
+    {
+        "label": "diff",
+        "detail": "use diff mode for the current window"
+    },
+    {
+        "label": "diffexpr",
+        "detail": "expression used to obtain a diff file"
+    },
+    {
+        "label": "diffopt",
+        "detail": "labels for using diff mode"
+    },
+    {
+        "label": "digraph",
+        "detail": "enable the entering of digraphs in Insert mode"
+    },
+    {
+        "label": "directory",
+        "detail": "list of directory names for the swap file"
+    },
+    {
+        "label": "display",
+        "detail": "list of flags for how to display text"
+    },
+    {
+        "label": "eadirection",
+        "detail": "in which direction equalalways works"
+    },
+    {
+        "label": "encoding",
+        "detail": "encoding used internally"
+    },
+    {
+        "label": "endofline",
+        "detail": "write <EOL> for last line in file"
+    },
+    {
+        "label": "equalalways",
+        "detail": "windows are automatically made the same size"
+    },
+    {
+        "label": "equalprg",
+        "detail": "external program to use for = command"
+    },
+    {
+        "label": "errorbells",
+        "detail": "ring the bell for error messages"
+    },
+    {
+        "label": "errorfile",
+        "detail": "name of the errorfile for the QuickFix mode"
+    },
+    {
+        "label": "errorformat",
+        "detail": "detail of the lines in the error file"
+    },
+    {
+        "label": "eventignore",
+        "detail": "autocommand events that are ignored"
+    },
+    {
+        "label": "expandtab",
+        "detail": "use spaces when <Tab> is inserted"
+    },
+    {
+        "label": "exrc",
+        "detail": "read .nvimrc and .exrc in the current directory"
+    },
+    {
+        "label": "fileencoding",
+        "detail": "file encoding for multi-byte text"
+    },
+    {
+        "label": "fileencodings",
+        "detail": "automatically detected character encodings"
+    },
+    {
+        "label": "fileformat",
+        "detail": "file format used for file I/O"
+    },
+    {
+        "label": "fileformats",
+        "detail": "automatically detected values for fileformat"
+    },
+    {
+        "label": "fileignorecase",
+        "detail": "ignore case when using file names"
+    },
+    {
+        "label": "filetype",
+        "detail": "type of file, used for autocommands"
+    },
+    {
+        "label": "fillchars",
+        "detail": "characters to use for displaying special items"
+    },
+    {
+        "label": "fixendofline",
+        "detail": "make sure last line in file has <EOL>"
+    },
+    {
+        "label": "fkmap",
+        "detail": "Farsi keyboard mapping"
+    },
+    {
+        "label": "foldclose",
+        "detail": "close a fold when the cursor leaves it"
+    },
+    {
+        "label": "foldcolumn",
+        "detail": "width of the column used to indicate folds"
+    },
+    {
+        "label": "foldenable",
+        "detail": "set to display all folds open"
+    },
+    {
+        "label": "foldexpr",
+        "detail": "expression used when foldmethod is expr"
+    },
+    {
+        "label": "foldignore",
+        "detail": "ignore lines when foldmethod is indent"
+    },
+    {
+        "label": "foldlevel",
+        "detail": "close folds with a level higher than this"
+    },
+    {
+        "label": "foldlevelstart",
+        "detail": "foldlevel when starting to edit a file"
+    },
+    {
+        "label": "foldmarker",
+        "detail": "markers used when foldmethod is marker"
+    },
+    {
+        "label": "foldmethod",
+        "detail": "folding type"
+    },
+    {
+        "label": "foldminlines",
+        "detail": "minimum number of lines for a fold to be closed"
+    },
+    {
+        "label": "foldnestmax",
+        "detail": "maximum fold depth"
+    },
+    {
+        "label": "foldopen",
+        "detail": "for which commands a fold will be opened"
+    },
+    {
+        "label": "foldtext",
+        "detail": "expression used to display for a closed fold"
+    },
+    {
+        "label": "formatexpr",
+        "detail": "expression used with gq command"
+    },
+    {
+        "label": "formatlistpat",
+        "detail": "pattern used to recognize a list header"
+    },
+    {
+        "label": "formatlabels",
+        "detail": "how automatic formatting is to be done"
+    },
+    {
+        "label": "formatprg",
+        "detail": "name of external program used with gq command"
+    },
+    {
+        "label": "fsync",
+        "detail": "whether to invoke fsync() after file write"
+    },
+    {
+        "label": "gdefault",
+        "detail": "the :substitute flag g is default on"
+    },
+    {
+        "label": "grepformat",
+        "detail": "format of grepprg output"
+    },
+    {
+        "label": "grepprg",
+        "detail": "program to use for :grep"
+    },
+    {
+        "label": "guicursor",
+        "detail": "GUI: settings for cursor shape and blinking"
+    },
+    {
+        "label": "guifont",
+        "detail": "GUI: Name(s) of font(s) to be used"
+    },
+    {
+        "label": "guifontset",
+        "detail": "GUI: Names of multi-byte fonts to be used"
+    },
+    {
+        "label": "guifontwide",
+        "detail": "list of font names for double-wide characters"
+    },
+    {
+        "label": "guilabels",
+        "detail": "GUI: Which components and labels are used"
+    },
+    {
+        "label": "guitablabel",
+        "detail": "GUI: custom label for a tab page"
+    },
+    {
+        "label": "guitabtooltip",
+        "detail": "GUI: custom tooltip for a tab page"
+    },
+    {
+        "label": "helpfile",
+        "detail": "full path name of the main help file"
+    },
+    {
+        "label": "helpheight",
+        "detail": "minimum height of a new help window"
+    },
+    {
+        "label": "helplang",
+        "detail": "preferred help languages"
+    },
+    {
+        "label": "hidden",
+        "detail": "dont unload buffer when it is |abandon|ed"
+    },
+    {
+        "label": "hlsearch",
+        "detail": "highlight matches with last search pattern"
+    },
+    {
+        "label": "history",
+        "detail": "number of command-lines that are remembered"
+    },
+    {
+        "label": "hkmap",
+        "detail": "Hebrew keyboard mapping"
+    },
+    {
+        "label": "hkmapp",
+        "detail": "phonetic Hebrew keyboard mapping"
+    },
+    {
+        "label": "icon",
+        "detail": "let Vim set the text of the window icon"
+    },
+    {
+        "label": "iconstring",
+        "detail": "string to use for the Vim icon text"
+    },
+    {
+        "label": "ignorecase",
+        "detail": "ignore case in search patterns"
+    },
+    {
+        "label": "imcmdline",
+        "detail": "use IM when starting to edit a command line"
+    },
+    {
+        "label": "imdisable",
+        "detail": "do not use the IM in any mode"
+    },
+    {
+        "label": "iminsert",
+        "detail": "use :lmap or IM in Insert mode"
+    },
+    {
+        "label": "imsearch",
+        "detail": "use :lmap or IM when typing a search pattern"
+    },
+    {
+        "label": "include",
+        "detail": "pattern to be used to find an include file"
+    },
+    {
+        "label": "includeexpr",
+        "detail": "expression used to process an include line"
+    },
+    {
+        "label": "incsearch",
+        "detail": "highlight match while typing search pattern"
+    },
+    {
+        "label": "indentexpr",
+        "detail": "expression used to obtain the indent of a line"
+    },
+    {
+        "label": "indentkeys",
+        "detail": "keys that trigger indenting with indentexpr"
+    },
+    {
+        "label": "infercase",
+        "detail": "adjust case of match for keyword completion"
+    },
+    {
+        "label": "insertmode",
+        "detail": "start the edit of a file in Insert mode"
+    },
+    {
+        "label": "isfname",
+        "detail": "characters included in file names and pathnames"
+    },
+    {
+        "label": "isident",
+        "detail": "characters included in identifiers"
+    },
+    {
+        "label": "iskeyword",
+        "detail": "characters included in keywords"
+    },
+    {
+        "label": "isprint",
+        "detail": "printable characters"
+    },
+    {
+        "label": "joinspaces",
+        "detail": "two spaces after a period with a join command"
+    },
+    {
+        "label": "keymap",
+        "detail": "name of a keyboard mapping"
+    },
+    {
+        "label": "keymodel",
+        "detail": "enable starting/stopping selection with keys"
+    },
+    {
+        "label": "keywordprg",
+        "detail": "program to use for the K command"
+    },
+    {
+        "label": "langmap",
+        "detail": "alphabetic characters for other language mode"
+    },
+    {
+        "label": "langmenu",
+        "detail": "language to be used for the menus"
+    },
+    {
+        "label": "langremap",
+        "detail": "do apply langmap to mapped characters"
+    },
+    {
+        "label": "laststatus",
+        "detail": "tells when last window has status lines"
+    },
+    {
+        "label": "lazyredraw",
+        "detail": "dont redraw while executing macros"
+    },
+    {
+        "label": "linebreak",
+        "detail": "wrap long lines at a blank"
+    },
+    {
+        "label": "lines",
+        "detail": "number of lines in the display"
+    },
+    {
+        "label": "linespace",
+        "detail": "number of pixel lines to use between characters"
+    },
+    {
+        "label": "lisp",
+        "detail": "automatic indenting for Lisp"
+    },
+    {
+        "label": "lispwords",
+        "detail": "words that change how lisp indenting works"
+    },
+    {
+        "label": "list",
+        "detail": "show <Tab> and <EOL>"
+    },
+    {
+        "label": "listchars",
+        "detail": "characters for displaying in list mode"
+    },
+    {
+        "label": "loadplugins",
+        "detail": "load plugin scripts when starting up"
+    },
+    {
+        "label": "magic",
+        "detail": "changes special characters in search patterns"
+    },
+    {
+        "label": "makeef",
+        "detail": "name of the errorfile for :make"
+    },
+    {
+        "label": "makeprg",
+        "detail": "program to use for the :make command"
+    },
+    {
+        "label": "matchpairs",
+        "detail": "pairs of characters that % can match"
+    },
+    {
+        "label": "matchtime",
+        "detail": "tenths of a second to show matching paren"
+    },
+    {
+        "label": "maxcombine",
+        "detail": "maximum nr of combining characters displayed"
+    },
+    {
+        "label": "maxfuncdepth",
+        "detail": "maximum recursive depth for user functions"
+    },
+    {
+        "label": "maxmapdepth",
+        "detail": "maximum recursive depth for mapping"
+    },
+    {
+        "label": "maxmem",
+        "detail": "maximum memory (in Kbyte) used for one buffer"
+    },
+    {
+        "label": "maxmempattern",
+        "detail": "maximum memory (in Kbyte) used for pattern search"
+    },
+    {
+        "label": "maxmemtot",
+        "detail": "maximum memory (in Kbyte) used for all buffers"
+    },
+    {
+        "label": "menuitems",
+        "detail": "maximum number of items in a menu"
+    },
+    {
+        "label": "mkspellmem",
+        "detail": "memory used before |:mkspell| compresses the tree"
+    },
+    {
+        "label": "modeline",
+        "detail": "recognize modelines at start or end of file"
+    },
+    {
+        "label": "modelines",
+        "detail": "number of lines checked for modelines"
+    },
+    {
+        "label": "modifiable",
+        "detail": "changes to the text are not possible"
+    },
+    {
+        "label": "modified",
+        "detail": "buffer has been modified"
+    },
+    {
+        "label": "more",
+        "detail": "pause listings when the whole screen is filled"
+    },
+    {
+        "label": "mouse",
+        "detail": "enable the use of mouse clicks"
+    },
+    {
+        "label": "mousefocus",
+        "detail": "keyboard focus follows the mouse"
+    },
+    {
+        "label": "mousehide",
+        "detail": "hide mouse pointer while typing"
+    },
+    {
+        "label": "mousemodel",
+        "detail": "changes meaning of mouse buttons"
+    },
+    {
+        "label": "mouseshape",
+        "detail": "shape of the mouse pointer in different modes"
+    },
+    {
+        "label": "mousetime",
+        "detail": "max time between mouse double-click"
+    },
+    {
+        "label": "nrformats",
+        "detail": "number formats recognized for CTRL-A command"
+    },
+    {
+        "label": "number",
+        "detail": "print the line number in front of each line"
+    },
+    {
+        "label": "numberwidth",
+        "detail": "number of columns used for the line number"
+    },
+    {
+        "label": "omnifunc",
+        "detail": "function for filetype-specific completion"
+    },
+    {
+        "label": "opendevice",
+        "detail": "allow reading/writing devices on MS-Windows"
+    },
+    {
+        "label": "operatorfunc",
+        "detail": "function to be called for |g@| operator"
+    },
+    {
+        "label": "packpath",
+        "detail": "list of directories used for packages"
+    },
+    {
+        "label": "paragraphs",
+        "detail": "nroff macros that separate paragraphs"
+    },
+    {
+        "label": "paste",
+        "detail": "allow pasting text"
+    },
+    {
+        "label": "pastetoggle",
+        "detail": "key code that causes paste to toggle"
+    },
+    {
+        "label": "patchexpr",
+        "detail": "expression used to patch a file"
+    },
+    {
+        "label": "patchmode",
+        "detail": "keep the oldest version of a file"
+    },
+    {
+        "label": "path",
+        "detail": "list of directories searched with gf et.al."
+    },
+    {
+        "label": "perldll",
+        "detail": "name of the Perl dynamic library"
+    },
+    {
+        "label": "preserveindent",
+        "detail": "preserve the indent structure when reindenting"
+    },
+    {
+        "label": "previewheight",
+        "detail": "height of the preview window"
+    },
+    {
+        "label": "previewwindow",
+        "detail": "identifies the preview window"
+    },
+    {
+        "label": "printdevice",
+        "detail": "name of the printer to be used for :hardcopy"
+    },
+    {
+        "label": "printencoding",
+        "detail": "encoding to be used for printing"
+    },
+    {
+        "label": "printexpr",
+        "detail": "expression used to print PostScript for :hardcopy"
+    },
+    {
+        "label": "printfont",
+        "detail": "name of the font to be used for :hardcopy"
+    },
+    {
+        "label": "printheader",
+        "detail": "format of the header used for :hardcopy"
+    },
+    {
+        "label": "printmbcharset",
+        "detail": "CJK character set to be used for :hardcopy"
+    },
+    {
+        "label": "printmbfont",
+        "detail": "font names to be used for CJK output of :hardcopy"
+    },
+    {
+        "label": "printlabels",
+        "detail": "controls the format of :hardcopy output"
+    },
+    {
+        "label": "prompt",
+        "detail": "enable prompt in Ex mode"
+    },
+    {
+        "label": "pumheight",
+        "detail": "maximum height of the popup menu"
+    },
+    {
+        "label": "pythondll",
+        "detail": "name of the Python 2 dynamic library"
+    },
+    {
+        "label": "pythonthreedll",
+        "detail": "name of the Python 3 dynamic library"
+    },
+    {
+        "label": "quoteescape",
+        "detail": "escape characters used in a string"
+    },
+    {
+        "label": "readonly",
+        "detail": "disallow writing the buffer"
+    },
+    {
+        "label": "redrawtime",
+        "detail": "timeout for hlsearch and |:match| highlighting"
+    },
+    {
+        "label": "regexpengine",
+        "detail": "default regexp engine to use"
+    },
+    {
+        "label": "relativenumber",
+        "detail": "show relative line number in front of each line"
+    },
+    {
+        "label": "remap",
+        "detail": "allow mappings to work recursively"
+    },
+    {
+        "label": "report",
+        "detail": "threshold for reporting nr. of lines changed"
+    },
+    {
+        "label": "revins",
+        "detail": "inserting characters will work backwards"
+    },
+    {
+        "label": "rightleft",
+        "detail": "window is right-to-left oriented"
+    },
+    {
+        "label": "rightleftcmd",
+        "detail": "commands for which editing works right-to-left"
+    },
+    {
+        "label": "rubydll",
+        "detail": "name of the Ruby dynamic library"
+    },
+    {
+        "label": "ruler",
+        "detail": "show cursor line and column in the status line"
+    },
+    {
+        "label": "rulerformat",
+        "detail": "custom format for the ruler"
+    },
+    {
+        "label": "runtimepath",
+        "detail": "list of directories used for runtime files"
+    },
+    {
+        "label": "scroll",
+        "detail": "lines to scroll with CTRL-U and CTRL-D"
+    },
+    {
+        "label": "scrollbind",
+        "detail": "scroll in window as other windows scroll"
+    },
+    {
+        "label": "scrolljump",
+        "detail": "minimum number of lines to scroll"
+    },
+    {
+        "label": "scrolloff",
+        "detail": "minimum nr. of lines above and below cursor"
+    },
+    {
+        "label": "scrollopt",
+        "detail": "how scrollbind should behave"
+    },
+    {
+        "label": "sections",
+        "detail": "nroff macros that separate sections"
+    },
+    {
+        "label": "secure",
+        "detail": "secure mode for reading .vimrc in current dir"
+    },
+    {
+        "label": "selection",
+        "detail": "what type of selection to use"
+    },
+    {
+        "label": "selectmode",
+        "detail": "when to use Select mode instead of Visual mode"
+    },
+    {
+        "label": "sessionlabels",
+        "detail": "labels for |:mksession|"
+    },
+    {
+        "label": "shada",
+        "detail": "use .shada file upon startup and exiting"
+    },
+    {
+        "label": "shell",
+        "detail": "name of shell to use for external commands"
+    },
+    {
+        "label": "shellcmdflag",
+        "detail": "flag to shell to execute one command"
+    },
+    {
+        "label": "shellpipe",
+        "detail": "string to put output of :make in error file"
+    },
+    {
+        "label": "shellquote",
+        "detail": "quote character(s) for around shell command"
+    },
+    {
+        "label": "shellredir",
+        "detail": "string to put output of filter in a temp file"
+    },
+    {
+        "label": "shellslash",
+        "detail": "use forward slash for shell file names"
+    },
+    {
+        "label": "shelltemp",
+        "detail": "whether to use a temp file for shell commands"
+    },
+    {
+        "label": "shellxescape",
+        "detail": "characters to escape when shellxquote is ("
+    },
+    {
+        "label": "shellxquote",
+        "detail": "like shellquote, but include redirection"
+    },
+    {
+        "label": "shiftround",
+        "detail": "round indent to multiple of shiftwidth"
+    },
+    {
+        "label": "shiftwidth",
+        "detail": "number of spaces to use for (auto)indent step"
+    },
+    {
+        "label": "shortmess",
+        "detail": "list of flags, reduce length of messages"
+    },
+    {
+        "label": "showbreak",
+        "detail": "string to use at the start of wrapped lines"
+    },
+    {
+        "label": "showcmd",
+        "detail": "show (partial) command in status line"
+    },
+    {
+        "label": "showfulltag",
+        "detail": "show full tag pattern when completing tag"
+    },
+    {
+        "label": "showmatch",
+        "detail": "briefly jump to matching bracket if insert one"
+    },
+    {
+        "label": "showmode",
+        "detail": "message on status line to show current mode"
+    },
+    {
+        "label": "showtabline",
+        "detail": "tells when the tab pages line is displayed"
+    },
+    {
+        "label": "sidescroll",
+        "detail": "minimum number of columns to scroll horizontal"
+    },
+    {
+        "label": "sidescrolloff",
+        "detail": "min. nr. of columns to left and right of cursor"
+    },
+    {
+        "label": "signcolumn",
+        "detail": "when to display the sign column"
+    },
+    {
+        "label": "smartcase",
+        "detail": "no ignore case when pattern has uppercase"
+    },
+    {
+        "label": "smartindent",
+        "detail": "smart autoindenting for C programs"
+    },
+    {
+        "label": "smarttab",
+        "detail": "use shiftwidth when inserting <Tab>"
+    },
+    {
+        "label": "softtabstop",
+        "detail": "number of spaces that <Tab> uses while editing"
+    },
+    {
+        "label": "spell",
+        "detail": "enable spell checking"
+    },
+    {
+        "label": "spellcapcheck",
+        "detail": "pattern to locate end of a sentence"
+    },
+    {
+        "label": "spellfile",
+        "detail": "files where |zg| and |zw| store words"
+    },
+    {
+        "label": "spelllang",
+        "detail": "language(s) to do spell checking for"
+    },
+    {
+        "label": "spellsuggest",
+        "detail": "method(s) used to suggest spelling corrections"
+    },
+    {
+        "label": "splitbelow",
+        "detail": "new window from split is below the current one"
+    },
+    {
+        "label": "splitright",
+        "detail": "new window is put right of the current one"
+    },
+    {
+        "label": "startofline",
+        "detail": "commands move cursor to first non-blank in line"
+    },
+    {
+        "label": "statusline",
+        "detail": "custom format for the status line"
+    },
+    {
+        "label": "suffixes",
+        "detail": "suffixes that are ignored with multiple match"
+    },
+    {
+        "label": "suffixesadd",
+        "detail": "suffixes added when searching for a file"
+    },
+    {
+        "label": "swapfile",
+        "detail": "whether to use a swapfile for a buffer"
+    },
+    {
+        "label": "switchbuf",
+        "detail": "sets behavior when switching to another buffer"
+    },
+    {
+        "label": "synmaxcol",
+        "detail": "maximum column to find syntax items"
+    },
+    {
+        "label": "syntax",
+        "detail": "syntax to be loaded for current buffer"
+    },
+    {
+        "label": "tabline",
+        "detail": "custom format for the console tab pages line"
+    },
+    {
+        "label": "tabpagemax",
+        "detail": "maximum number of tab pages for |-p| and tab all"
+    },
+    {
+        "label": "tabstop",
+        "detail": "number of spaces that <Tab> in file uses"
+    },
+    {
+        "label": "tagbsearch",
+        "detail": "use binary searching in tags files"
+    },
+    {
+        "label": "tagcase",
+        "detail": "how to handle case when searching in tags files"
+    },
+    {
+        "label": "taglength",
+        "detail": "number of significant characters for a tag"
+    },
+    {
+        "label": "tagrelative",
+        "detail": "file names in tag file are relative"
+    },
+    {
+        "label": "tags",
+        "detail": "list of file names used by the tag command"
+    },
+    {
+        "label": "tagstack",
+        "detail": "push tags onto the tag stack"
+    },
+    {
+        "label": "term",
+        "detail": "name of the terminal"
+    },
+    {
+        "label": "termbidi",
+        "detail": "terminal takes care of bi-directionality"
+    },
+    {
+        "label": "terse",
+        "detail": "shorten some messages"
+    },
+    {
+        "label": "textwidth",
+        "detail": "maximum width of text that is being inserted"
+    },
+    {
+        "label": "thesaurus",
+        "detail": "list of thesaurus files for keyword completion"
+    },
+    {
+        "label": "tildeop",
+        "detail": "tilde command ~ behaves like an operator"
+    },
+    {
+        "label": "timeout",
+        "detail": "time out on mappings and key codes"
+    },
+    {
+        "label": "timeoutlen",
+        "detail": "time out time in milliseconds"
+    },
+    {
+        "label": "title",
+        "detail": "let Vim set the title of the window"
+    },
+    {
+        "label": "titlelen",
+        "detail": "percentage of columns used for window title"
+    },
+    {
+        "label": "titleold",
+        "detail": "old title, restored when exiting"
+    },
+    {
+        "label": "titlestring",
+        "detail": "string to use for the Vim window title"
+    },
+    {
+        "label": "ttimeout",
+        "detail": "time out on mappings"
+    },
+    {
+        "label": "ttimeoutlen",
+        "detail": "time out time for key codes in milliseconds"
+    },
+    {
+        "label": "ttytype",
+        "detail": "alias for term"
+    },
+    {
+        "label": "undodir",
+        "detail": "where to store undo files"
+    },
+    {
+        "label": "undofile",
+        "detail": "save undo information in a file"
+    },
+    {
+        "label": "undolevels",
+        "detail": "maximum number of changes that can be undone"
+    },
+    {
+        "label": "undoreload",
+        "detail": "max nr of lines to save for undo on a buffer reload"
+    },
+    {
+        "label": "updatecount",
+        "detail": "after this many characters flush swap file"
+    },
+    {
+        "label": "updatetime",
+        "detail": "after this many milliseconds flush swap file"
+    },
+    {
+        "label": "verbose",
+        "detail": "give informative messages"
+    },
+    {
+        "label": "verbosefile",
+        "detail": "file to write messages in"
+    },
+    {
+        "label": "viewdir",
+        "detail": "directory where to store files with :mkview"
+    },
+    {
+        "label": "viewlabels",
+        "detail": "specifies what to save for :mkview"
+    },
+    {
+        "label": "virtualedit",
+        "detail": "when to use virtual editing"
+    },
+    {
+        "label": "visualbell",
+        "detail": "use visual bell instead of beeping"
+    },
+    {
+        "label": "warn",
+        "detail": "warn for shell command when buffer was changed"
+    },
+    {
+        "label": "whichwrap",
+        "detail": "allow specified keys to cross line boundaries"
+    },
+    {
+        "label": "wildchar",
+        "detail": "command-line character for wildcard expansion"
+    },
+    {
+        "label": "wildcharm",
+        "detail": "like wildchar but also works when mapped"
+    },
+    {
+        "label": "wildignore",
+        "detail": "files matching these patterns are not completed"
+    },
+    {
+        "label": "wildignorecase",
+        "detail": "ignore case when completing file names"
+    },
+    {
+        "label": "wildmenu",
+        "detail": "use menu for command line completion"
+    },
+    {
+        "label": "wildmode",
+        "detail": "mode for wildchar command-line expansion"
+    },
+    {
+        "label": "wildlabels",
+        "detail": "specifies how command line completion is done"
+    },
+    {
+        "label": "winaltkeys",
+        "detail": "when the windows system handles ALT keys"
+    },
+    {
+        "label": "window",
+        "detail": "nr of lines to scroll for CTRL-F and CTRL-B"
+    },
+    {
+        "label": "winheight",
+        "detail": "minimum number of lines for the current window"
+    },
+    {
+        "label": "winfixheight",
+        "detail": "keep window height when opening/closing windows"
+    },
+    {
+        "label": "winfixwidth",
+        "detail": "keep window width when opening/closing windows"
+    },
+    {
+        "label": "winminheight",
+        "detail": "minimum number of lines for any window"
+    },
+    {
+        "label": "winminwidth",
+        "detail": "minimal number of columns for any window"
+    },
+    {
+        "label": "winwidth",
+        "detail": "minimal number of columns for current window"
+    },
+    {
+        "label": "wrap",
+        "detail": "long lines wrap and continue on the next line"
+    },
+    {
+        "label": "wrapmargin",
+        "detail": "chars from the right where wrapping starts"
+    },
+    {
+        "label": "wrapscan",
+        "detail": "searches wrap around the end of the file"
+    },
+    {
+        "label": "write",
+        "detail": "writing to a file is allowed"
+    },
+    {
+        "label": "writeany",
+        "detail": "write to file with no need for ! override"
+    },
+    {
+        "label": "writebackup",
+        "detail": "make a backup before overwriting a file"
+    },
+    {
+        "label": "writedelay",
+        "detail": "delay this many msec for each char (for debug)"
+    }
+]

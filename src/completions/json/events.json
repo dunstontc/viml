@@ -1,0 +1,382 @@
+[
+  {
+      "label": "BufNewFile",
+      "detail": "starting to edit a file that doesn't exist"
+  },
+  {
+      "label": "BufReadPre",
+      "detail": "starting to edit a new buffer, before reading the file"
+  },
+  {
+      "label": "BufRead",
+      "detail": "starting to edit a new buffer, after reading the file"
+  },
+  {
+      "label": "BufReadPost",
+      "detail": "starting to edit a new buffer, after reading the file"
+  },
+  {
+      "label": "BufReadCmd",
+      "detail": "before starting to edit a new buffer `Cmd-event`"
+  },
+  {
+      "label": "FileReadPre",
+      "detail": "before reading a file with a \":read\" command"
+  },
+  {
+      "label": "FileReadPost",
+      "detail": "after reading a file with a \":read\" command"
+  },
+  {
+      "label": "FileReadCmd",
+      "detail": "before reading a file with a \":read\" command `Cmd-event`"
+  },
+  {
+      "label": "FilterReadPre",
+      "detail": "before reading a file from a filter command"
+  },
+  {
+      "label": "FilterReadPost",
+      "detail": "after reading a file from a filter command"
+  },
+  {
+      "label": "StdinReadPre",
+      "detail": "before reading from stdin into the buffer"
+  },
+  {
+      "label": "StdinReadPost",
+      "detail": "After reading from the stdin into the buffer"
+  },
+  {
+      "label": "BufWrite",
+      "detail": "starting to write the whole buffer to a file"
+  },
+  {
+      "label": "BufWritePre",
+      "detail": "starting to write the whole buffer to a file"
+  },
+  {
+      "label": "BufWritePost",
+      "detail": "after writing the whole buffer to a file"
+  },
+  {
+      "label": "BufWriteCmd",
+      "detail": "before writing the whole buffer to a file `Cmd-event`"
+  },
+  {
+      "label": "FileWritePre",
+      "detail": "starting to write part of a buffer to a file"
+  },
+  {
+      "label": "FileWritePost",
+      "detail": "after writing part of a buffer to a file"
+  },
+  {
+      "label": "FileWriteCmd",
+      "detail": "before writing part of a buffer to a file `Cmd-event`"
+  },
+  {
+      "label": "FileAppendPre",
+      "detail": "starting to append to a file"
+  },
+  {
+      "label": "FileAppendPost",
+      "detail": "after appending to a file"
+  },
+  {
+      "label": "FileAppendCmd",
+      "detail": "before appending to a file `Cmd-event`"
+  },
+  {
+      "label": "FilterWritePre",
+      "detail": "starting to write a file for a filter command or diff"
+  },
+  {
+      "label": "FilterWritePost",
+      "detail": "after writing a file for a filter command or diff"
+  },
+  {
+      "label": "BufAdd",
+      "detail": "just after adding a buffer to the buffer list"
+  },
+  {
+      "label": "BufCreate",
+      "detail": "just after adding a buffer to the buffer list"
+  },
+  {
+      "label": "BufDelete",
+      "detail": "before deleting a buffer from the buffer list"
+  },
+  {
+      "label": "BufWipeout",
+      "detail": "before completely deleting a buffer"
+  },
+  {
+      "label": "BufFilePre",
+      "detail": "before changing the name of the current buffer"
+  },
+  {
+      "label": "BufFilePost",
+      "detail": "after changing the name of the current buffer"
+  },
+  {
+      "label": "BufEnter",
+      "detail": "after entering a buffer"
+  },
+  {
+      "label": "BufLeave",
+      "detail": "before leaving to another buffer"
+  },
+  {
+      "label": "BufWinEnter",
+      "detail": "after a buffer is displayed in a window"
+  },
+  {
+      "label": "BufWinLeave",
+      "detail": "before a buffer is removed from a window"
+  },
+  {
+      "label": "BufUnload",
+      "detail": "before unloading a buffer"
+  },
+  {
+      "label": "BufHidden",
+      "detail": "just after a buffer has become hidden"
+  },
+  {
+      "label": "BufNew",
+      "detail": "just after creating a new buffer"
+  },
+  {
+      "label": "SwapExists",
+      "detail": "detected an existing swap file"
+  },
+  {
+      "label": "TermOpen",
+      "detail": "when a terminal job starts"
+  },
+  {
+      "label": "TermClose",
+      "detail": "when a terminal job ends"
+  },
+  {
+      "label": "FileType",
+      "detail": "when the 'filetype' option has been set"
+  },
+  {
+      "label": "Syntax",
+      "detail": "when the 'syntax' option has been set"
+  },
+  {
+      "label": "OptionSet",
+      "detail": "after setting any option"
+  },
+  {
+      "label": "VimEnter",
+      "detail": "after doing all the startup stuff"
+  },
+  {
+      "label": "GUIEnter",
+      "detail": "after starting the GUI successfully"
+  },
+  {
+      "label": "GUIFailed",
+      "detail": "after starting the GUI failed"
+  },
+  {
+      "label": "TermResponse",
+      "detail": "after the terminal response to `t_RV` is received"
+  },
+  {
+      "label": "QuitPre",
+      "detail": "when using `:quit`, before deciding whether to quit"
+  },
+  {
+      "label": "VimLeavePre",
+      "detail": "before exiting Vim, before writing the shada file"
+  },
+  {
+      "label": "VimLeave",
+      "detail": "before exiting Vim, after writing the shada file"
+  },
+  {
+      "label": "DirChanged",
+      "detail": "after the `current-directory` was changed"
+  },
+  {
+      "label": "FileChangedShell",
+      "detail": "Vim notices that a file changed since editing started"
+  },
+  {
+      "label": "FileChangedShellPost",
+      "detail": "after handling a file changed since editing started"
+  },
+  {
+      "label": "FileChangedRO",
+      "detail": "before making the first change to a read-only file"
+  },
+  {
+      "label": "ShellCmdPost",
+      "detail": "after executing a shell command"
+  },
+  {
+      "label": "ShellFilterPost",
+      "detail": "after filtering with a shell command"
+  },
+  {
+      "label": "CmdUndefined",
+      "detail": "a user command is used but it isn't defined"
+  },
+  {
+      "label": "FuncUndefined",
+      "detail": "a user function is used but it isn't defined"
+  },
+  {
+      "label": "SpellFileMissing",
+      "detail": "a spell file is used but it can't be found"
+  },
+  {
+      "label": "SourcePre",
+      "detail": "before sourcing a Vim script"
+  },
+  {
+      "label": "SourceCmd",
+      "detail": "before sourcing a Vim script `Cmd-event`"
+  },
+  {
+      "label": "VimResized",
+      "detail": "after the Vim window size changed"
+  },
+  {
+      "label": "FocusGained",
+      "detail": "Vim got input focus"
+  },
+  {
+      "label": "FocusLost",
+      "detail": "Vim lost input focus"
+  },
+  {
+      "label": "CursorHold",
+      "detail": "the user doesn't press a key for a while"
+  },
+  {
+      "label": "CursorHoldI",
+      "detail": "the user doesn't press a key for a while in Insert mode"
+  },
+  {
+      "label": "CursorMoved",
+      "detail": "the cursor was moved in Normal mode"
+  },
+  {
+      "label": "CursorMovedI",
+      "detail": "the cursor was moved in Insert mode"
+  },
+  {
+      "label": "WinNew",
+      "detail": "after creating a new window"
+  },
+  {
+      "label": "WinEnter",
+      "detail": "after entering another window"
+  },
+  {
+      "label": "WinLeave",
+      "detail": "before leaving a window"
+  },
+  {
+      "label": "TabEnter",
+      "detail": "after entering another tab page"
+  },
+  {
+      "label": "TabLeave",
+      "detail": "before leaving a tab page"
+  },
+  {
+      "label": "TabNew",
+      "detail": "when creating a new tab page"
+  },
+  {
+      "label": "TabNewEntered",
+      "detail": "after entering a new tab page"
+  },
+  {
+      "label": "TabClosed",
+      "detail": "after closing a tab page"
+  },
+  {
+      "label": "CmdlineEnter",
+      "detail": "after entering cmdline mode"
+  },
+  {
+      "label": "CmdlineLeave",
+      "detail": "before leaving cmdline mode"
+  },
+  {
+      "label": "CmdwinEnter",
+      "detail": "after entering the command-line window"
+  },
+  {
+      "label": "CmdwinLeave",
+      "detail": "before leaving the command-line window"
+  },
+  {
+      "label": "InsertEnter",
+      "detail": "starting Insert mode"
+  },
+  {
+      "label": "InsertChange",
+      "detail": "when typing <Insert> while in Insert or Replace mode"
+  },
+  {
+      "label": "InsertLeave",
+      "detail": "when leaving Insert mode"
+  },
+  {
+      "label": "InsertCharPre",
+      "detail": "when a character was typed in Insert mode, before"
+  },
+  {
+      "label": "TextYankPost",
+      "detail": "when some text is yanked or deleted"
+  },
+  {
+      "label": "TextChanged",
+      "detail": "after a change was made to the text in Normal mode"
+  },
+  {
+      "label": "TextChangedI",
+      "detail": "after a change was made to the text in Insert mode"
+  },
+  {
+      "label": "ColorScheme",
+      "detail": "after loading a color scheme"
+  },
+  {
+      "label": "RemoteReply",
+      "detail": "a reply from a server Vim was received"
+  },
+  {
+      "label": "QuickFixCmdPre",
+      "detail": "before a quickfix command is run"
+  },
+  {
+      "label": "QuickFixCmdPost",
+      "detail": "after a quickfix command is run"
+  },
+  {
+      "label": "SessionLoadPost",
+      "detail": "after loading a session file"
+  },
+  {
+      "label": "MenuPopup",
+      "detail": "just before showing the popup menu"
+  },
+  {
+      "label": "CompleteDone",
+      "detail": "after Insert mode completion is done"
+  },
+  {
+      "label": "User",
+      "detail": "to be used in combination with \":doautocmd\""
+  }
+]

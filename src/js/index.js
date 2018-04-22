@@ -10,10 +10,18 @@ const vimOptions = require(path.join(__dirname, '..', 'completions', 'options'))
 //     console.log('Error:', err.stack);
 //   }
 // };
-
 // ReadFile()
 
-let optionsArray = [];
-let allOptions = vimOptions.map(opt => optionsArray.push(opt.option));
+// {
+//   "option": "allowrevins",
+//   "shortname": "ari",
+//   "description": "allow CTRL-_ in Insert and Command-line mode"
+// },
+
+const optionsArray = [];
+vimOptions.map((opt) => {
+  const { option, ...other } = opt;
+  optionsArray.push(other);
+});
 // console.log(optionsArray);
 process.stdout.write(JSON.stringify(optionsArray));
