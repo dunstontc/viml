@@ -2,19 +2,10 @@
 #   │ ┬│ │ ││ ┬││││ │├┬┘├┤
 #  o└─┘┴ ┴ ┴└─┘┘└┘└─┘┴└─└─┘
 
-# Mac files
-Icon?
 .DS_store
-Desktop.ini
-Thumbs.db
-
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
 
 # dependencies
 **/node_modules/**
-bower_components/**
 
 # Built files
 Build/**
@@ -37,7 +28,6 @@ yarn-error.log
 # Misc.
 !.gitkeep
 .idea
-.vscode
 .projectile
 **/tags
 
