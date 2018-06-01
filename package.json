@@ -1,16 +1,14 @@
 {
     "name": "viml",
     "displayName": "vscode-viml-syntax",
-    "description": "vscode-viml-syntax",
-    "version": "0.1.6",
+    "description": "Syntax highlighting for .vim files.",
+    "version": "0.1.7",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
         "url": "https://github.com/dunstontc/viml.git"
     },
-    "bugs": {
-      "url": "https://github.com/dunstontc/viml/issues"
-    },
+    "bugs": {"url": "https://github.com/dunstontc/viml/issues"},
     "scripts": {
         "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
@@ -19,16 +17,8 @@
         "start": "gulp watch",
         "test": "node ./src/index.js"
     },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "activationEvents": [
-        "*"
-    ],
-    "main": "./build/extension",
+    "engines": {"vscode": "^1.20.0"},
+    "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
@@ -58,7 +48,7 @@
         "color": "#569cd6",
         "theme": "dark"
     },
-    "icon": "assets/128.png",
+    "icon": "assets/vim.png",
     "devDependencies": {
         "@types/node": "^9.6.6",
         "gulp": "^3.9.1",
