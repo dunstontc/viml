@@ -3,6 +3,7 @@ All notable changes to the "viml" extension will be documented in this file.
 
 # 0.1.7
 - Updated readme.
+- Updated todo.txt.
 
 # 0.1.6
 - Defined `vim-variables`.
