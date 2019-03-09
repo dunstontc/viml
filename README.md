@@ -5,7 +5,7 @@
 <!-- [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/dunstontc.viml.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=dunstontc.viml) -->
 
 ## Features
-- Syntax highlighting for .vim files.
+- Syntax highlighting for Vim config files like `.vim` and `.vimrc`.
 - By default, the following file(types) will be highlighted:
   - `*.vim`
   - `*.vimrc`
@@ -13,4 +13,3 @@
   - `*.ideavim`
 
 ## [License](https://github.com/dunstontc/viml/blob/master/LICENSE)
-
