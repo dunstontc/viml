@@ -28,6 +28,7 @@
                     "viml"
                 ],
                 "extensions": [
+                    ".exrc",
                     ".vim",
                     ".vimrc",
                     ".gvim",

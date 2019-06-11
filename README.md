@@ -7,6 +7,7 @@
 ## Features
 - Syntax highlighting for .vim files.
 - By default, the following file(types) will be highlighted:
+  - `*.exrc`
   - `*.vim`
   - `*.vimrc`
   - `*.gvim`
